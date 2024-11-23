@@ -1,0 +1,14 @@
+C:\IT\JuniorMind\sudoku\Sudoku\bin\Debug\netcoreapp3.1\Sudoku.exe
+C:\IT\JuniorMind\sudoku\Sudoku\bin\Debug\netcoreapp3.1\Sudoku.deps.json
+C:\IT\JuniorMind\sudoku\Sudoku\bin\Debug\netcoreapp3.1\Sudoku.runtimeconfig.json
+C:\IT\JuniorMind\sudoku\Sudoku\bin\Debug\netcoreapp3.1\Sudoku.runtimeconfig.dev.json
+C:\IT\JuniorMind\sudoku\Sudoku\bin\Debug\netcoreapp3.1\Sudoku.dll
+C:\IT\JuniorMind\sudoku\Sudoku\bin\Debug\netcoreapp3.1\Sudoku.pdb
+C:\IT\JuniorMind\sudoku\Sudoku\obj\Debug\netcoreapp3.1\Sudoku.csproj.AssemblyReference.cache
+C:\IT\JuniorMind\sudoku\Sudoku\obj\Debug\netcoreapp3.1\Sudoku.GeneratedMSBuildEditorConfig.editorconfig
+C:\IT\JuniorMind\sudoku\Sudoku\obj\Debug\netcoreapp3.1\Sudoku.AssemblyInfoInputs.cache
+C:\IT\JuniorMind\sudoku\Sudoku\obj\Debug\netcoreapp3.1\Sudoku.AssemblyInfo.cs
+C:\IT\JuniorMind\sudoku\Sudoku\obj\Debug\netcoreapp3.1\Sudoku.csproj.CoreCompileInputs.cache
+C:\IT\JuniorMind\sudoku\Sudoku\obj\Debug\netcoreapp3.1\Sudoku.dll
+C:\IT\JuniorMind\sudoku\Sudoku\obj\Debug\netcoreapp3.1\Sudoku.pdb
+C:\IT\JuniorMind\sudoku\Sudoku\obj\Debug\netcoreapp3.1\Sudoku.genruntimeconfig.cache

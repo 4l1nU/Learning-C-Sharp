@@ -1,0 +1,5299 @@
+Km pqrcursi cu un consum x si o capacitate de rezervor y
+string inputData = Console.ReadLine();
+int fuelConsumption = Convert.ToInt32(inputData);
+inputData = Console.ReadLine();
+int fuelTank = Convert.ToInt32(inputData);
+decimal kilometers = fuelTank / fuelConsumption * 100;
+Console.WriteLine(kilometers);
+
+Un grup de X studenți participă la o excursie de studiu în SUA și plătesc Y$ fiecare pentru Z zile de cazare la hotel.
+Un alt grup de W studenți au decis să participe și ei. Bugetul lor total este de Q$. Scrie o aplicație ce returnează numărul de zile de cazare pe care al doilea grup de studenți și-l permite la același hotel.
+
+Datele de intrare sunt numere întregi și se vor citi de la tastatură, câte un număr pe linie, în următoarea ordine: X, Y, Z, W, Q.
+
+Exemplu:
+
+Pentru datele de intrare:
+
+3
+150
+1
+2
+1200
+La consolă se va afișa:
+
+4
+ rezolvare:
+ string inputData = Console.ReadLine();  
+int x = Convert.ToInt32(inputData);
+
+inputData = Console.ReadLine();
+int y = Convert.ToInt32(inputData);
+
+inputData = Console.ReadLine();
+int z = Convert.ToInt32(inputData);
+
+inputData = Console.ReadLine();
+int w = Convert.ToInt32(inputData);
+
+inputData = Console.ReadLine();
+int q = Convert.ToInt32(inputData);
+
+decimal zOne = y / z;
+decimal qOne = q / w;
+decimal a = qOne / zOne;
+Console.WriteLine(a);
+
+suprafata de pus parchet mxn
+dim parchet axb
+pierdere 15%
+
+rezolvare:
+string inputData = Console.ReadLine();
+int n = Convert.ToInt32(inputData);
+
+inputData = Console.ReadLine(); 
+int m = Convert.ToInt32(inputData);
+
+inputData = Console.ReadLine();
+int a = Convert.ToInt32(inputData);
+
+inputData = Console.ReadLine();
+int b = Convert.ToInt32(inputData);
+
+decimal c = (decimal)n / a;
+decimal d = (decimal)m / b;
+decimal e = (decimal)c * d;
+decimal p = (e + e * (decimal)0.15);
+
+decimal f = Math.Ceiling(p);
+
+
+
+Console.WriteLine(f);
+
+
+ program care afiseaza numarul mai mare
+REZULTAT:
+string inputData = Console.ReadLine();
+double n = Convert.ToDouble(inputData);
+inputData = Console.ReadLine();
+double m = Convert.ToDouble(inputData);
+if (n < m)
+{
+    Console.WriteLine(m);
+}
+else
+    Console.WriteLine(n);
+
+14 ani = reducere 50%; peste 14 fullPrice
+rezolvare:
+string inputData = Console.ReadLine();
+double fullPrice = Convert.ToDouble(inputData);
+
+inputData = Console.ReadLine();
+int age = Convert.ToInt32(inputData);
+
+if (age > 14)
+{
+    Console.WriteLine(fullPrice);
+}
+else
+{
+    double reducedPrice = fullPrice * 0.5;
+    Console.WriteLine(reducedPrice);
+}
+
+multiplu de 3 arata fizz
+multiplu de 5 arata buzz
+multiplu de 5 si 3 fizzbuzz
+niciunul dintre cazuri arata numarul introdus
+
+rezolvare : 
+string inputData = Console.ReadLine();
+double number = Convert.ToDouble(inputData);
+
+double fizz = number % 3;
+if (fizz == 0)
+{
+    Console.Write("Fizz");
+}
+double buzz = number % 5;
+if (buzz == 0)
+{
+    Console.Write("Buzz");
+}
+if (buzz != 0 && fizz != 0)
+{
+    Console.WriteLine(number);
+}
+
+
+
+se da un buget
+se cumpara in aceasta ordine 
+2 paini a cate 5 lei buc
+10 oua a cate 0.5 lei buc
+3 kg mere a cate 3 lei kg
+
+
+
+rezolvare:
+string inputData = Console.ReadLine();
+double cash = Convert.ToDouble(inputData);
+double left = cash;
+int nrBread = 0;
+int nrEggs = 0;
+int nrKgApples = 0;
+for (int i = 2; i != 0 && left >= 5; i--)
+{
+    left -= 5;
+    nrBread++;
+    
+}
+Console.WriteLine(nrBread);
+
+for (int i = 10; i != 0 && left >= 0.5; i--)
+{
+    left -= 0.5;
+    nrEggs++;
+
+}
+Console.WriteLine(nrEggs);
+
+for (int i = 3; i != 0 && left >= 3; i--)
+{
+    left -= 3;
+    nrKgApples++;
+
+}
+Console.WriteLine(nrKgApples);
+if (nrKgApples == 3)
+{
+    Console.WriteLine("DA");
+}
+else
+{
+    Console.WriteLine("NU");
+}
+
+1.Convertește un număr dat, între 1 și 100, în cifre romane.
+
+I - 1
+V - 5
+X - 10
+L - 50
+C - 100
+Câteva exemple de comversie:
+
+4 - IV
+8 - VIII
+9 - IX
+15 - XV
+30 - XXX
+39 - XXXIX
+41 - XLI
+45 - XLV
+99 - XCIX
+Aplicația va citi de la consolă numărul și va afișa numărul scris cu cifre romane.
+
+Exemplu:
+
+Pentru datele de intrare:
+
+4
+La consolă se va afișa:
+
+IV
+
+REZOLVARE:
+string inputData = Console.ReadLine();
+int numar = Convert.ToInt32(inputData);
+while (numar >= 100)
+{
+    Console.Write("C");
+    numar -= 100;
+}
+while (numar >= 90)
+{
+    Console.Write("XC");
+    numar -= 90;
+}
+while (numar >= 50)
+{
+    Console.Write("L");
+    numar -= 50;
+}
+while (numar >= 40)
+{
+    Console.Write("XL");
+    numar -= 40;
+}
+while (numar >= 10)
+{
+    Console.Write("X");
+    numar -= 10;    
+}
+while (numar >= 9)
+{
+    Console.Write("IX");
+    numar -= 9; 
+}
+while (numar >= 5)
+{
+    Console.Write("V");
+    numar -= 5; 
+}
+while (numar >= 4)
+{
+    Console.Write("IV");
+    numar -= 4;
+}
+while (numar >= 1)
+{
+    Console.Write("I");
+    numar -= 1;
+}
+
+
+orice numar in numar roman de la 1-100
+rezolvare : 
+string inputData = Console.ReadLine();
+int numar = Convert.ToInt32(inputData);
+while (numar >= 100)
+{
+    Console.Write("C");
+    numar -= 100;
+}
+while (numar >= 90)
+{
+    Console.Write("XC");
+    numar -= 90;
+}
+while (numar >= 50)
+{
+    Console.Write("L");
+    numar -= 50;
+}
+while (numar >= 40)
+{
+    Console.Write("XL");
+    numar -= 40;
+}
+while (numar >= 10)
+{
+    Console.Write("X");
+    numar -= 10;    
+}
+while (numar >= 9)
+{
+    Console.Write("IX");
+    numar -= 9; 
+}
+while (numar >= 5)
+{
+    Console.Write("V");
+    numar -= 5; 
+}
+while (numar >= 4)
+{
+    Console.Write("IV");
+    numar -= 4;
+}
+while (numar >= 1)
+{
+    Console.Write("I");
+    numar -= 1;
+}
+Problema de rezolvat:
+
+Zodiacul european conține următoarele zodii:
+
+Berbec (data nașterii: 21 martie - 20 aprilie)
+Taur (data nașterii: 21 aprilie - 21 mai)
+Gemeni (data nașterii: 22 mai - 21 iunie)
+Rac (data nașterii: 22 iunie - 22 iulie)
+Leu (data nașterii: 23 iulie - 22 august)
+Fecioară (data nașterii: 23 august - 21 septembrie)
+Balanță (data nașterii: 22 septembrie - 22 octombrie)
+Scorpion (data nașterii: 23 octombrie - 21 noiembrie)
+Săgetător (data nașterii: 22 noiembrie - 20 decembrie)
+Capricorn (data nașterii: 21 decembrie - 19 ianuarie)
+Vărsător (data nașterii: 20 ianuarie - 18 februarie)
+Pești (data nașterii: 19 februarie - 20 martie)
+Să se scrie o aplicație ce primește ca date de intrare zodia unei persoane (scrisă fără diacritice) și tipărește cele două luni posibile (câte una pe linie) în care s-a născut persoana respectivă. Dacă utilizatorul introduce o zodie ce nu există se va afișa textul zodie invalidă.
+
+Exemplu:
+
+Pentru datele de intrare:
+
+Gemeni
+La consolă se va afișa:
+
+mai
+iunie
+
+REZOLVARE.
+
+switch (inputData)
+{
+    case "Berbec":
+        Console.WriteLine("martie");
+        Console.WriteLine("aprilie");
+        break;
+    case "Taur":
+        Console.WriteLine("aprilie");
+        Console.WriteLine("mai");
+        break;
+    case "Gemeni":
+        Console.WriteLine("mai");
+        Console.WriteLine("iunie");
+        break;
+    case "Rac":
+        Console.WriteLine("iunie");
+        Console.WriteLine("iulie");
+        break;
+    case "Leu":
+        Console.WriteLine("iulie");
+        Console.WriteLine("august");
+        break;
+    case "Fecioara":
+        Console.WriteLine("august");
+        Console.WriteLine("septembrie");
+        break;
+    case "Balanta":
+        Console.WriteLine("septembrie");
+        Console.WriteLine("octombrie");
+        break;
+    case "Scorpion":
+        Console.WriteLine("octombrie");
+        Console.WriteLine("noiembrie");
+        break;
+    case "Sagetator":
+        Console.WriteLine("noiembrie");
+        Console.WriteLine("decemnbrie");
+        break;
+    case "Capricorn":
+        Console.WriteLine("decembrie");
+        Console.WriteLine("ianuarie");
+        break;
+    case "Varsator":
+        Console.WriteLine("ianuarie");
+        Console.WriteLine("februarie");
+        break;
+    case "Pesti":
+        Console.WriteLine("februarie");
+        Console.WriteLine("martie");
+        break;
+}
+
+produsul nr introduse, la introducere x afiseaza produsul;
+rezolvare : 
+int total = 1;
+for(int i = 0; i < 100; i++)
+{
+    string inputData = Console.ReadLine();
+    if (inputData == "x")
+    {
+        Console.WriteLine(total);
+        break;
+    }
+    int a = Convert.ToInt32(inputData);
+    total *= a;
+    inputData = Console.ReadLine();
+    if (inputData == "x")
+    {
+        Console.WriteLine(total);
+        break;
+    }
+
+    int b = Convert.ToInt32(inputData);
+    total *= b;
+
+}
+
+se introduc nr; la cifra 0 se arata cel mai mic nr introdus
+
+REZOLVARE:
+int minValue = 0;
+
+for (int i = 0; i < 100; i++)
+{
+    string inputData = Console.ReadLine();
+    int a = Convert.ToInt32(inputData);
+    if (a == 0)
+    {
+        Console.WriteLine(minValue);
+        break;
+    }
+    if (a < minValue)
+    {
+        minValue = a;
+    }    
+}
+
+Problema de rezolvat:
+
+Să se scrie o aplicație consolă ce afișează câte numere pozitive sunt într-un șir de numere întregi dat.
+Numerele se introduc câte unul pe linie, iar aplicația le va citi pe rând până cand utilizatorul scrie în loc de un număr caracterul x. Atunci când utilizatorul a tastat x aplicația știe că au fost introduse toate numerele din șir și afișează totalul numerelor pozitive.
+
+Exemplu:
+
+Pentru datele de intrare:
+
+-4
+3
+-6
+-7
+x
+La consolă se va afișa:
+
+1
+
+REZOLVARE: 
+
+int b = 0;
+for (int i = 0; i < 100; i++)
+{
+    string inputData = Console.ReadLine();
+    if (inputData == "x")
+    {
+        Console.WriteLine(b);
+        break;
+    }else
+    {
+        int n = Convert.ToInt32(inputData);
+        if (n >= 0)
+        {
+            b += 1;
+        }
+    }
+    
+}
+
+se da un text;
+apoi se cauta o litera din el si se afiseaza true sau false
+
+REZOLVARE:
+string inputText = Console.ReadLine();
+char inputLetter =  Convert.ToChar(Console.ReadLine());
+bool result = false;
+for (int i = 0; i< inputText.Length; i++)
+{
+    if (inputText[i] == inputLetter)
+    {
+        result = true;
+        break;
+    }   
+}
+Console.WriteLine(result);
+
+Se dă un text pe o linie și o literă pe următoarea linie. Să se scrie o aplicație consolă ce determină numărul de apariții al literei date în text.
+
+Exemplu:
+
+Pentru datele de intrare:
+
+sample text
+t
+La consolă se va afișa:
+
+2
+REZOLVARE:
+
+string inputText = Console.ReadLine();
+//char inputLetter =  Convert.ToChar(Console.ReadLine());
+string roWord = "";
+string enWord = "";
+int i = 0;
+for (i = 0; i < inputText.Length; i++)
+{
+    if (inputText[i] == '=')
+    {
+        i++;
+        break;
+
+    }
+    enWord += inputText[i];
+
+
+}
+while (i < inputText.Length)
+{
+    roWord += inputText[i];
+    i++;
+}
+Console.WriteLine(enWord);
+Console.WriteLine(roWord);
+
+Problema de rezolvat:
+
+Se dă pe o linie o frază compusă din mai multe cuvinte despărțite între ele printr-unul sau mai multe spații. Pe următoarea linie se dă un număr X.
+Să se scrie o aplicație consolă ce tipărește al X-lea cuvânt din frază, dacă fraza are cel puțin X cuvinte. Dacă fraza nu are X cuvinte, atunci tipărește N/A.
+
+Exemplu:
+
+Pentru datele de intrare:
+
+o     fraza de      test
+3
+La consolă se va afișa:
+
+de
+
+REZOLVARE:
+
+string inputText = Console.ReadLine();
+int inputNumber = Convert.ToInt32(Console.ReadLine());
+string word = "";
+string[] words = new string[inputNumber];
+int index = -1;
+int j = 0;
+int i = 0;
+for (i = j; i < inputText.Length; i++)
+{
+    if (inputText[i] != ' ')
+    {
+        for (i = j; i < inputText.Length; i++)
+        {
+            if (inputText[i] != ' ')
+            {
+                word += inputText[i];
+            }else
+            {
+                break;
+            }
+            j++;
+           
+        }
+        if (index == inputNumber-1)
+        {
+            break;
+        }
+        index++;
+        words[index] = word;
+        word = "";
+    }
+
+    j++;
+}
+if(inputNumber - 1 > index)
+{
+    Console.WriteLine("N/A");
+}
+Console.WriteLine(words[inputNumber-1]);
+
+PROBLEMA
+
+sa se afiseze numerele dintr un  text introdus
+
+REZOLVARE:
+string text = Console.ReadLine();
+            string numbers = "";
+            bool digitAdded = false;
+
+            for (int i = 0; i < text.Length; i++)
+            {
+                if (text[i] >= '0' && text[i] <= '9')
+                {
+                    numbers += text[i];
+                    digitAdded = true;
+                }
+                else
+                {
+                    if (digitAdded)
+                    {
+                        numbers += " ";
+                        digitAdded = false;
+                    }
+                }
+            }
+
+            Console.WriteLine(numbers);
+        }
+    }
+	
+	Problema de rezolvat:
+
+Să se scrie o aplicație consolă ce tipărește toate numerele pare dintr-un șir de numere întregi dat.
+Numerele se introduc câte unul pe linie, iar aplicația le va citi pe rând până cand utilizatorul scrie în loc de un număr caracterul x. Atunci când utilizatorul a tastat x aplicația știe că au fost introduse toate numerele din șir și afișează câte unul pe rând toate numerele pare care sunt în șir, în ordinea în care au fost introduse.
+
+Dacă nu sunt numere pare în șir aplicația va afișa textul N/A.
+
+Exemplu:
+
+Pentru datele de intrare:
+
+4
+3
+6
+7
+x
+La consolă se va afișa:
+
+4
+6
+
+REZOLVARE:
+
+string inputNumbers = Console.ReadLine();
+string evenNumbers = "";
+while (inputNumbers !="x")
+{
+    int intNumbers = Convert.ToInt32(inputNumbers);
+    if (intNumbers % 2 == 0)
+    {
+        evenNumbers += inputNumbers;
+        evenNumbers += " ";
+    }
+    inputNumbers = Console.ReadLine();
+    
+}
+inputNumbers = "";
+if (evenNumbers == "")
+{
+    Console.WriteLine("N/A");
+}
+for(int i = 0; i < evenNumbers.Length; i++)
+{
+    if (evenNumbers[i] == ' ')
+    {
+        Console.WriteLine(inputNumbers);
+        inputNumbers = "";
+        continue;
+    }
+    inputNumbers += evenNumbers[i];
+    
+}
+
+se introduc multe nr, 
+se da dupa al x lea nr dorit 
+se afisseaza dublul lui;
+
+REZOLVARE:
+string inputNumbers = Console.ReadLine();
+int n = Convert.ToInt32(Console.ReadLine());
+
+string numereString = "";
+for  (int i = 0; i < inputNumbers.Length ; i++)
+{
+    while (inputNumbers[i] != ' ')
+    {
+        numereString += inputNumbers[i];
+        i++;
+        if (i >= inputNumbers.Length)
+        {
+            break;
+        }
+
+    }
+    
+    n--;
+    if( n == 0)
+    {
+        int numere = Convert.ToInt32(numereString);
+        numere *= 2;
+        Console.WriteLine(numere);
+    }
+    numereString = "";
+}
+
+Problema de rezolvat:
+
+Un comerciant are într-un oraș un lanț de N magazine.
+
+Să se scrie o aplicație consolă ce primește ca date de intrare:
+
+pe prima linie numărul de magazine N
+apoi încă N linii, fiecare dintre ele conținând profitul pe cele 4 trimestre anului, cu până la două zecimale precizie, pentru câte un magazin. Numerele sunt depărțite între ele printr-un spațiu.
+Și tipărește:
+
+cel mai profitabil trimestru, în formatul Trimestrul 2: 5231.82
+cel mai profitabil magazin, in formatul Magazinul 1: 765.20
+Exemplu:
+
+Pentru datele de intrare:
+
+2
+1000.50 2000 1000.00 3000.0
+500.00 600.00 700.00 800.00
+La consolă se va afișa:
+
+Trimestrul 4: 3800.00
+Magazinul 1: 7000.50
+
+REZOLVARE: in vreo 5 ore minim
+
+int numberOfStores = Convert.ToInt32(Console.ReadLine());
+decimal[,] storesProfits = new decimal[numberOfStores, 4];
+string varProfituri = "";
+for (int i = 0; i < numberOfStores; i++){
+    string profituri =Console.ReadLine();
+    int k = 0;
+   for(int j = 0; j < profituri.Length; j++)
+    {
+        if (profituri[j] != ' ')
+        {
+            varProfituri += profituri[j];
+            if(j+1 == profituri.Length)
+            {
+                storesProfits[i, k] = Convert.ToDecimal(varProfituri);
+                k++;
+                varProfituri = "";
+            }
+        }
+        else
+        {
+
+            storesProfits[i, k] = Convert.ToDecimal(varProfituri);
+            k++;
+            varProfituri = "";
+        }
+    }
+
+}
+decimal prima = 0;
+decimal[] profitTotal = new decimal[numberOfStores];
+decimal[] profitTrim = new decimal[4];
+
+for (int i = 0; i < storesProfits.GetLength(0); i++)
+{
+    for (int j = 0; j < storesProfits.GetLength(1); j++)
+    {
+        prima += storesProfits[i, j];
+
+        if (j == storesProfits.GetLength(1) - 1)
+        {
+            profitTotal[i] = prima;
+            prima = 0;
+        }
+        if (profitTrim[j] == 0)
+        {
+            profitTrim[j] = storesProfits[i, j];
+        }
+        else
+        {
+            profitTrim[j] += storesProfits[i, j];
+        }
+    }
+}
+
+for (int i = 0; i < profitTrim.Length; i++)
+{
+    decimal trimOne = profitTrim[i];
+    i++;
+    decimal trimTwo = profitTrim[i];
+    i++;
+    decimal trimThree = profitTrim[i];
+    i++;
+    decimal trimFour = profitTrim[i];
+    if( trimOne >= trimTwo && trimOne >= trimThree && trimOne >= trimFour)
+    {
+        Console.WriteLine("Trimestrul 1: " + trimOne.ToString("0.00"));
+    }
+    if (trimTwo >= trimOne && trimTwo >= trimThree && trimTwo >= trimFour)
+    {
+        Console.WriteLine("Trimestrul 2: " + trimTwo.ToString("0.00"));
+    }
+    if (trimThree >= trimOne && trimThree >= trimTwo && trimThree >= trimFour)
+    {
+        Console.WriteLine("Trimestrul 3: " + trimThree.ToString("0.00"));
+    }
+    if (trimFour >= trimOne && trimFour >= trimTwo && trimFour >= trimThree)
+    {
+        Console.WriteLine("Trimestrul 4: " + trimFour.ToString("0.00"));
+    }
+
+}
+decimal profiTotalOne = 0;
+decimal profiTotalTwo = 0;
+decimal greaterProfit = 0;
+int m = 0;
+for(int j = 0; j < profitTotal.Length; j++)
+{
+        profiTotalOne = profitTotal[j];
+    
+    if(j == 0 && j+1 != profitTotal.Length)
+    {
+        j++;
+        profiTotalTwo = profitTotal[j];
+        if (profiTotalOne > profiTotalTwo)
+        {
+            greaterProfit = profiTotalOne;
+            
+
+
+        }
+        else
+        {
+            greaterProfit = profiTotalTwo;
+            m += 2;
+
+        }
+    }
+
+        if( profiTotalOne >= greaterProfit)
+        {
+            greaterProfit = profiTotalOne;
+        m = j+1;
+            
+
+        }
+    }
+Console.WriteLine("Magazinul " + m + ": " + greaterProfit.ToString("0.00"));
+
+Problema de rezolvat:
+
+Calculează câte pătrate se pot forma pe o tablă de șah de dimensiunea n x n.
+
+Exemplu:
+
+Pentru datele de intrare:
+
+8
+La consolă se va afișa:
+
+204
+
+REZOLVARE:
+
+int n = Convert.ToInt32(Console.ReadLine());
+int result = 0;
+for(int i = n; i > 0; i--)
+{
+    result += n* n;
+    n--;
+}
+Console.WriteLine(result);
+
+ Se da un text; sa se afiseze cate caractere de la inceput si final sunt in oglinda;
+ 
+REZOLVARE:
+string inputData = Console.ReadLine();
+int n = 0;
+int j = inputData.Length - 1;
+for (int i = 0; i < inputData.Length; i++)
+{
+        if (inputData[j] == inputData[i])
+        {
+            n++;
+            
+
+        }
+        else
+        {
+        break;
+        }
+    j--;
+    
+}
+Console.WriteLine(n);
+Problema de rezolvat:
+
+Se dau două șiruri de caractere de dimensiune egală. Să se determine dacă fiecare caracter din primul șir poate fi înlocuit în mod unic cu un caracter din al doilea șir astfel încat cele două șiruri să fie egale. Să se afișeze și perechile de caractere corespondente între cele două șiruri.
+
+Exemplul 1:
+
+Pentru datele de intrare:
+
+aab
+ttd
+La consolă se va afișa:
+
+True
+a => t
+b => d
+Exemplul 2:
+
+Pentru datele de intrare:
+
+aba
+ttd
+La consolă se va afișa:
+
+False
+În al doilea exemplu răspunsul e false pentru că nu există o corespondență unică pentru caracterul 'a': îi corespund atât 't' cât și 'd'.
+
+string inputCharOne = Console.ReadLine();
+string inputCharTwo = Console.ReadLine();
+char[] charOne = new char[inputCharOne.Length];
+char[] charTwo = new char[inputCharTwo.Length];
+for (int i = 0; i< inputCharOne.Length; i++)
+{
+    charOne[i] = inputCharOne[i];
+    charTwo[i] = inputCharTwo[i];
+}
+
+string packs = "";
+for (int i = 0;i< charOne.Length; i++)
+{
+    int k = i;
+
+        
+        if (packs.IndexOf($"{charOne[i]} => {charTwo[k]}") != -1)
+        {
+            
+            continue;
+        }
+        else
+        {
+            if ((packs.IndexOf($"{charOne[i]} => ") != -1))
+            {
+                Console.WriteLine(false);
+                return;
+            }
+           packs += charOne[i] + " => " + charTwo[k];
+            packs += ",";
+           
+            
+           
+        }
+       
+    }
+Console.WriteLine(true);
+string showPack = "";
+for(int i = 0; i< packs.Length; i++)
+{
+    if (packs[i] == ',')
+    {
+        Console.WriteLine(showPack);
+        if(i == packs.Length-1)
+        {
+            break;
+        }
+        showPack = "";
+        i++;
+    }
+    showPack += packs[i];
+    
+}
+int[] numbers = ReadNumbers();
+Console.WriteLine(Convert.ToInt32(CalculateCombinations(numbers)));
+static int[] ReadNumbers()
+{
+    int[] numbers = new int[2];
+    numbers[0] = Convert.ToInt32(Console.ReadLine());
+    numbers[1] = Convert.ToInt32(Console.ReadLine());
+    return numbers;
+}
+static double CalculateCombinations(int[] numbers)
+{
+    double n = numbers[0];
+    double a = 0; double b = 0;
+    int k = numbers[1];
+    double result = 1;
+    for (int i = 0; i < k; i++)
+    {
+        a = n - i;
+        b = k - i;
+        result *= a/b;
+    }
+  return result;       
+}
+
+Cate combinatii posibilie de N luate cate K;
+exemplu
+N = 8 si K = 3 => 56
+
+REZOLVARE:
+int[] numbers = ReadNumbers(2);
+Console.WriteLine(Convert.ToInt32(CalculateCombinations(numbers)));
+static int[] ReadNumbers(int numbersOfInput)
+{
+    int[] numbers = new int[numbersOfInput];
+    for (int i = 0; i < numbers.Length; i++)
+        numbers[i] = Convert.ToInt32(Console.ReadLine());
+    return numbers;
+}
+static double CalculateCombinations(int[] numbers)
+{
+    double n = numbers[0];
+    double a = 0; double b = 0;
+    int k = numbers[1];
+    double result = 1;
+    for (int i = 0; i < k; i++)
+    {
+        a = n - i;
+        b = k - i;
+        result *= a/b;
+    }
+  return result;       
+}
+
+Problema de rezolvat:
+
+Vrei să participi la jocul de noroc 6 din 49 cu o singură variantă (simplă) și vrei să știi ce șanse ai să câștigi:
+
+la categoria I (6 numere)
+la categoria II (5 numere)
+la categoria III (4 numere)
+Scrie o aplicație consolă ce calculează șansele de câștig la loto. Generalizează soluția să funcționeze pentru orice combinație de bile totale, bile extrase și categorie.
+
+Aplicația primește ca date de intrare numărul total de bile, numărul de bile extrase și categoria și apoi tipărește șansele de câștig cu o precizie de 10 zecimale dacă se joacă cu o singură variantă.
+
+Exemplu:
+
+Pentru datele de intrare:
+
+40
+5
+II
+La consolă se va afișa:
+
+0.0002659542
+
+string[] numbers = ReadNumbers(3);
+Console.WriteLine(CalculateProbability(numbers).ToString("0.0000000000"));
+static string[] ReadNumbers(int numbersOfInput)
+{
+    string[] numbers = new string[numbersOfInput];
+    for (int i = 0; i < numbers.Length; i++)
+        numbers[i] += Console.ReadLine() ;
+    return numbers;
+}
+static double CalculateProbability(string[] numbers)
+{
+    double n = Convert.ToDouble(numbers[0]);
+    double k = Convert.ToDouble(numbers[1]);
+    double result = 1;
+    switch (numbers[2])
+    {
+        case "I":
+            result = 1/CalculateCombinations(n, k);
+            break;
+        case "II":
+
+            result = (CalculateCombinations(k,k-1) * CalculateCombinations(n - k, k - (k - 1))) / CalculateCombinations(n, k);
+            break;
+        case "III":
+            result = (CalculateCombinations(k, k-2) * CalculateCombinations(n - k, k - (k - 2))) / CalculateCombinations(n, k);
+            break;
+        default:
+            result = 1 / CalculateCombinations(n, k);
+            break;
+
+    }
+    return result ;
+}
+static double CalculateCombinations(double n, double k)
+{
+    double a = 0;
+    double b = 0;
+    double result = 1;
+    
+    for (int i = 0; i < k; i++)
+    {
+        a = n - i;
+        b = k - i;
+        result *= a / b;
+    }
+    return result;
+}
+
+ Calculare procentaj vocale din litere date
+ 
+ 
+Console.WriteLine(GetPercentageOfVowelsFromTotalLetters("abc"));
+static double GetPercentageOfVowelsFromTotalLetters(string text)
+{
+    int vowelsCount = 0;
+    int consonantsCount = 0;
+    foreach (char c in text)
+    {
+        if (IsVowel(c))
+        {
+            vowelsCount++;
+        }
+        if (IsConsonant(c))
+        {
+            consonantsCount++;
+        }
+    }
+    return (double)vowelsCount/(vowelsCount + consonantsCount) * 100;
+}
+static bool IsConsonant(char c)
+{
+    return Char.IsLetter(c) && !IsVowel(c);
+}
+
+static bool IsVowel(char c)
+{
+    return "aeiouAEIOU".IndexOf(c) != -1;
+	
+	
+}
+
+
+Problema de rezolvat:
+
+Se dă o listă de N elevi și o listă ce conține nota corespunzătoare fiecărui elev.
+
+Toti elevii primesc monede. Un elev care are nota mai mare decat vecinii lui din listă primește mai multe monede decât ei. Să se determine numărul minim de monede care trebuie dat fiecărui elev.
+
+Exemplu:
+
+Pentru datele de intrare:
+
+8
+Ionel
+Mihai
+Elena
+Maria
+Vasile
+George
+Irina
+Diana
+9
+10
+8
+7
+6
+9
+9
+10
+La consolă se va afișa:
+
+Ionel 1
+Mihai 4
+Elena 3
+Maria 2
+Vasile 1
+George 2
+Irina 1
+Diana 2
+
+REZOLVARE:
+
+using System;
+
+class Program
+{
+    private static void Main(string[] args)
+    {
+        int numberOfStudents = Convert.ToInt32(Console.ReadLine());
+        string[] studentsList = ListingStudents(numberOfStudents);
+        int[] gradesList = ListingGrades(numberOfStudents);
+        int[] coinsList = FirstPay(studentsList);
+        coinsList = SecondPay(gradesList, coinsList);
+        _ = ThirdPay(gradesList, coinsList);
+        _ = ThirdPay(gradesList, coinsList);
+        ShowCoins(studentsList, coinsList);
+    }
+
+    static void ShowCoins(string[] studentsList, int[] coinsList)
+    {
+        for (int i = 0; i < studentsList.Length; i++)
+        {
+            Console.WriteLine(studentsList[i] + " " + coinsList[i]);
+        }
+    }
+
+    static string[] ListingStudents(int numberOfStudents)
+        {
+            string[] studentsList = new string[numberOfStudents];
+            for (int j = 0; j < studentsList.Length; j++)
+            {
+                studentsList[j] = Console.ReadLine();
+            }
+
+            return studentsList;
+        }
+
+    static int[] ListingGrades(int numberOfStudents)
+        {
+            int[] gradesList = new int[numberOfStudents];
+            for (int i = 0; i < gradesList.Length; i++)
+            {
+                gradesList[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            return gradesList;
+        }
+
+    static int[] FirstPay(string[] studentsList)
+        {
+            int[] coins = new int[studentsList.Length];
+            for (int j = 0; j < coins.Length; j++)
+            {
+                coins[j]++;
+            }
+
+            return coins;
+        }
+
+    static int[] SecondPay(int[] gradesList, int[] coins)
+        {
+            for (int j = 0; j < coins.Length; j++)
+            {
+                if (j == coins.Length - 1)
+                {
+                if (gradesList[j] > gradesList[j - 1])
+                {
+                    coins[j]++;
+                }
+
+                continue;
+                }
+
+                if (j == 0)
+                {
+                if (gradesList[j] > gradesList[j + 1])
+                {
+                    coins[j]++;
+                }
+
+                continue;
+                }
+
+                coins[j] = CompareGrades(j, gradesList, coins[j]);
+            }
+
+            return coins;
+        }
+
+    static int CompareGrades(int j, int[] gradesList, int coins)
+        {
+            if (gradesList[j] > gradesList[j - 1])
+            {
+                coins++;
+                return coins;
+            }
+
+            if (gradesList[j] > gradesList[j + 1])
+            {
+                coins++;
+                return coins;
+            }
+
+            return coins;
+        }
+
+    static int CompareGradesAndCoins(int i, int[] gradesList, int[] coins)
+        {
+            if (coins[i] == coins[i - 1] && gradesList[i] > gradesList[i - 1])
+            {
+                coins[i]++;
+                return coins[i];
+            }
+
+            if (coins[i] == coins[i + 1] && gradesList[i] > gradesList[i + 1])
+            {
+                coins[i]++;
+                return coins[i];
+            }
+
+            return coins[i];
+        }
+
+    static int[] ThirdPay(int[] gradesList, int[] coins)
+        {
+            for (int i = 0; i < coins.Length; i++)
+            {
+                if (i == coins.Length - 1)
+                {
+                    if (gradesList[i] > gradesList[i - 1])
+                    {
+                        coins[i]++;
+                    }
+
+                    continue;
+                }
+
+                if (i == 0)
+                {
+                if (gradesList[i] > gradesList[i + 1])
+                {
+                    coins[i]++;
+                }
+
+                continue;
+            }
+
+                coins[i] = CompareGradesAndCoins(i, gradesList, coins);
+            }
+
+            return coins;
+    }
+}
+
+
+
+Problema de rezolvat:
+
+Jocul X și 0 se joacă de către doi jucători pe un careu de 3x3 pătrățele. Primul jucător marchează un pătrățel cu X, următorul marchează un pătrățel liber cu 0 și tot așa, alternativ, jucătorii marchează pătrățelele până când unul dintre jucători câștigă sau e remiză.
+
+Un jucător a câștigat jocul dacă a reușit să marcheze o linie, o coloană sau o diagonală completă a careului.
+
+Să se scrie o aplicație consolă ce primește ca date de intrare N mutări de X și 0 sub formă de coordonate. (0, 0) e colțul din stânga sus și (2, 2) e colțul din dreapta jos.
+Pe prima linie e numărul de mutări N, iar de la linia doi sunt mutările, căte una pe linie. Prima mutare e a jucătorului cu X, urmată de mutarea jucătorului cu 0, apoi iarăși X și tot așa mai departe.
+
+Aplicația va analiza mutările primite și va afișa căștigătorul: X, 0 sau remiza dacă nu e nici un câștigător.
+
+Exemplu:
+
+Pentru datele de intrare:
+
+7
+1 1
+2 1
+2 0
+0 2
+1 0
+1 2
+0 0
+La consolă se va afișa:
+
+X
+
+REZOLVARE:
+
+using System;
+
+class Program
+{
+    private static void Main(string[] args)
+    {
+        const string remiza = "remiza";
+        int numberOfMoves = Convert.ToInt32(Console.ReadLine());
+        string[,] moves = GetMoves(numberOfMoves);
+        Console.WriteLine(ShowResult(moves, remiza));
+    }
+
+    static string[,] GetMoves(int numberOfMoves)
+    {
+        const int even = 2;
+        string[,] moves = new string[3, 3];
+        for (int i = 1; i <= numberOfMoves; i++)
+        {
+            if (i % even == 0)
+            {
+                string[] inputMove = Console.ReadLine().Split(' ');
+                int x = Convert.ToInt32(inputMove[0]);
+                int y = Convert.ToInt32(inputMove[1]);
+                moves[x, y] = "0";
+            }
+            else
+            {
+                string[] inputMove = Console.ReadLine().Split(' ');
+                int x = Convert.ToInt32(inputMove[0]);
+                int y = Convert.ToInt32(inputMove[1]);
+                moves[x, y] = "x";
+            }
+        }
+
+        return moves;
+    }
+
+    static string ShowResult(string[,] moves, string remiza)
+    {
+        string finalResult = "";
+        if (CheckDiagonals(moves, remiza) == "x" || CheckColomns(moves, remiza) == "x" || CheckRows(moves, remiza) == "x")
+        {
+            finalResult = "x";
+            return finalResult;
+        }
+
+        if (CheckDiagonals(moves, remiza) == "0" || CheckColomns(moves, remiza) == "0" || CheckRows(moves, remiza) == "0")
+        {
+            finalResult = "0";
+            return finalResult;
+        }
+
+        finalResult = remiza;
+
+        return finalResult;
+    }
+
+    static void VerifyIfXOrO(string[,] moves, int i, int j, string player, ref int count)
+    {
+       count = moves[i, j] == player ? count + 1 : count + 0;
+    }
+
+    static string CheckDiagonals(string[,] moves, string remiza)
+    {
+        string result = "";
+        int countZero = 0;
+        int countZeroO = 0;
+        int countX = 0;
+        int countXx = 0;
+        const int a = 3;
+        for (int i = 0; i < moves.GetLength(0); i++)
+        {
+            int j = 2 - i;
+            VerifyIfXOrO(moves, i, j, "0", ref countZeroO);
+            VerifyIfXOrO(moves, i, j, "x", ref countXx);
+
+            VerifyIfXOrO(moves, i, i, "0", ref countZero);
+            VerifyIfXOrO(moves, i, i, "x", ref countX);
+        }
+
+        if (countX == a || countXx == a)
+        {
+            result = "x";
+            return result;
+        }
+
+        if (countZero == a || countZeroO == a)
+        {
+            result = "0";
+            return result;
+        }
+
+        result = remiza;
+        return result;
+    }
+
+    static string CheckRows(string[,] moves, string remiza)
+    {
+        string result = "";
+        for (int i = 0; i < moves.GetLength(0); i++)
+        {
+            int countX = 0;
+            int countZero = 0;
+            const int a = 3;
+            for (int j = 0; j < moves.GetLength(1); j++)
+            {
+                if (moves[i, j] == "x")
+                {
+                    countX++;
+                }
+
+                if (moves[i, j] == "0")
+                {
+                    countZero++;
+                }
+            }
+
+            if (countX == a)
+            {
+                result = "x";
+                return result;
+            }
+
+            if (countZero == a)
+            {
+                result = "0";
+                return result;
+            }
+        }
+
+        result = remiza;
+        return result;
+    }
+
+    static string CheckColomns(string[,] moves, string remiza)
+    {
+        string result = "";
+        const int a = 3;
+        for (int i = 0; i < moves.GetLength(0); i++)
+        {
+            int countX = 0;
+            int countZero = 0;
+            for (int j = 0; j < moves.GetLength(1); j++)
+            {
+                if (moves[j, i] == "x")
+                {
+                    countX++;
+                }
+
+                if (moves[j, i] == "0")
+                {
+                    countZero++;
+                }
+            }
+
+            if (countX == a)
+            {
+                result = "x";
+                return result;
+            }
+
+            if (countZero == a)
+            {
+                result = "0";
+                return result;
+            }
+        }
+
+        result = remiza;
+        return result;
+    }
+}
+Testul 1: Funcționează corect când câștigătorul e X pe coloană (7, 1 1, 2 1, 2 0, 0 2, 1 0, 1 2, 0 0) - succes
+Testul 2: Funcționează corect când câștigătorul e 0 pe linie (6, 2 1, 1 1, 0 2, 1 2, 0 0, 1 0) - succes
+Testul 3: Funcționează corect când câștigătorul e X pe diagonală (5, 1 1, 2 0, 2 2, 1 0, 0 0) - succes
+Testul 4: Funcționează corect când câștigătorul e 0 pe diagonală (6, 2 1, 1 1, 1 0, 2 0, 0 1, 0 2) - succes
+Testul 5: Funcționează corect când e remiză (9, 1 1, 2 0, 2 1, 0 1, 1 0, 1 2, 2 2, 0 0, 0 2) - succes
+
+1 = 0
+2 = O
+3 = o
+4 = 1
+5 = l
+6 = 00
+7 = 0O
+8 = 0o
+9 = 01
+10 = 0l
+11 = O0
+12 = OO
+000 = 31
+00l = 35
+0Ol = 40
+0ol = 45
+01l = 50
+0ll = 55
+O00 = 56
+O0l = 60
+
+			
+Aceasta este o problemă de transformare din baza 5 (5 caractere sunt folosite la codificarea numerelor) în baza 10.
+			0 O o 1 l
+			
+using System;
+
+class Program
+{
+    private static void Main(string[] args)
+    {
+        string[] inputCode = GetCodedText();
+        DecodingNumbers(inputCode);
+    }
+
+    static string[] GetCodedText()
+    {
+       return Console.ReadLine().Split(' ');
+    }
+
+    static void DecodingNumbers(string[] inputCode)
+    {
+        for (int i = 0; i < inputCode.Length; i++)
+        {
+            Console.Write(NumberDecoder(inputCode[i]) + " ");
+        }
+    }
+
+    static void DecimalDecrementing(ref char[] codedNumberArray, ref int i, string code, ref int k)
+    {
+        for (int j = k; j >= 0; j--)
+        {
+            if (j == 0 && codedNumberArray[j] == code[0])
+            {
+                codedNumberArray[j] = code[code.Length - 1];
+                k = k != 0 ? k - 1 : k;
+                i = i != 0 ? i - 1 : i;
+                break;
+            }
+
+            if (codedNumberArray[j] != code[0])
+            {
+                codedNumberArray[j] = code[code.IndexOf(codedNumberArray[j]) - 1];
+                break;
+            }
+
+            codedNumberArray[j] = code[code.Length - 1];
+        }
+    }
+
+    static int NumberPartialDecoder(int k, char[] codedNumberArray, int decodedNumber, string code, string codedNumber, ref int i)
+    {
+        while (i != 0 || k != 0)
+        {
+            for (int j = decodedNumber == 0 ? code.IndexOf(codedNumber[i]) : code.Length - 1; j >= 0; j--)
+            {
+                decodedNumber++;
+            }
+
+            codedNumberArray[i] = code[code.Length - 1];
+            DecimalDecrementing(ref codedNumberArray, ref i, code, ref k);
+        }
+
+        return decodedNumber;
+    }
+
+    static int NumberDecoder(string codedNumber)
+    {
+        int decodedNumber = 0;
+        const string code = "0Oo1l";
+        char[] codedNumberArray = new char[codedNumber.Length];
+        for (int i = 0; i < codedNumber.Length; i++)
+        {
+            codedNumberArray[i] = codedNumber[i];
+        }
+
+        for (int i = codedNumber.Length - 1; i >= 0; i--)
+        {
+            int k = i == 0 ? i : i - 1;
+
+            decodedNumber = NumberPartialDecoder(k, codedNumberArray, decodedNumber, code, codedNumber, ref i);
+            for (int j = decodedNumber == 0 ? code.IndexOf(codedNumber[i]) : code.Length - 1; j >= 0; j--)
+            {
+                decodedNumber++;
+            }
+        }
+
+        return decodedNumber;
+    }
+}
+
+Problema de rezolvat:
+
+Primele 26 de coloane din Excel sunt marcate cu literele alfabetului.
+După care continuă cu combinații de câte două litere, astfel coloana 27 este AA, 28 - AB, iar coloana 52 cu AZ.
+După ZZ, se continuă cu combinații de 3 litere.
+
+Dacă se dă numărul coloanei află care e combinația de litere corespunzătoare.
+
+Exemplu:
+
+Pentru datele de intrare:
+
+130
+La consolă se va afișa:
+
+DZ
+
+using System;
+
+class Program
+{
+    private static void Main(string[] args)
+    {
+        int inputNumber = GetNumber();
+        char[] code = NumberCoder(inputNumber);
+        CodeDisplay(code);
+    }
+
+    static int GetNumber()
+    {
+       return Convert.ToInt32(Console.ReadLine());
+    }
+
+    static void CodeDisplay(char[] codedNumberArray)
+    {
+            foreach (char c in codedNumberArray)
+            {
+                Console.Write(c);
+            }
+    }
+
+    static void DecimalDecrementing(ref char[] codedNumberArray, ref int i, string code, ref int k)
+    {
+        for (int j = k; j >= 0; j--)
+        {
+            if (codedNumberArray[j] == code[code.Length - 1] && j == 0)
+            {
+                codedNumberArray[j] = code[0];
+                k = i != 0 ? k + 1 : k;
+                codedNumberArray[k] = code[0];
+                i++;
+                break;
+            }
+
+            if (codedNumberArray[j] != code[code.Length - 1])
+            {
+                codedNumberArray[j] = code[code.IndexOf(codedNumberArray[j]) + 1];
+                break;
+            }
+
+            codedNumberArray[j] = code[0];
+        }
+    }
+
+    static char[] NumberPartialCoder(char[] codedNumberArray, string code, int inputNumber)
+    {
+        int decodedNumber = 0;
+        int i = 0;
+        int k = 0;
+        while (decodedNumber != inputNumber)
+        {
+            for (int j = 0; j < code.Length; j++)
+            {
+                decodedNumber++;
+                codedNumberArray[i] = code[j];
+                if (decodedNumber == inputNumber)
+                {
+                    return codedNumberArray;
+                }
+            }
+
+            DecimalDecrementing(ref codedNumberArray, ref i, code, ref k);
+        }
+
+        return codedNumberArray;
+    }
+
+    static char[] NumberCoder(int inputNumber)
+    {
+        const string code = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        char[] codedNumberArray = new char[10];
+        codedNumberArray = NumberPartialCoder(codedNumberArray, code, inputNumber);
+        return codedNumberArray;
+    }
+}
+Divide et impera: problemele mai complexe trebuie sparte în probleme mai mici și mai ușor de rezolvat. Funcțiile te ajută să delimitezi clar fiecare subproblemă, să-i definești datele de intrare și de ieșire și să-i dai un nume sugestiv ce conferă claritate întregului program.
+
+Stadiul 1 din 3
+
+Problema de rezolvat:
+
+Să se scrie o aplicație ce determină dacă un careu de Sudoku e valid.
+
+Exemplu:
+
+Pentru datele de intrare:
+
+9 1 8  5 7 2  6 4 3
+7 5 3  6 9 4  1 8 2
+2 6 4  1 8 3  7 9 5
+
+1 9 6  4 2 8  5 3 7
+3 8 2  7 5 6  9 1 4
+5 4 7  9 3 1  8 2 6
+
+4 7 9  2 1 5  3 6 8
+8 2 5  3 6 9  4 7 1
+6 3 1  8 4 7  2 5 9
+La consolă se va afișa:
+
+True
+
+Compilare executată cu succes.
+Testul 1: Validează careul corect prezentat ca exemplu la problemă - succes
+Testul 2: Validează careul din exemplu, dar formatat fără linii goale și cu căte un singur spațiu între elemente. - succes
+Testul 3: Invalidează un careu cu mai puțin de 9 elemente pe linie (careul din exemplu unde linia a doua e 7 5 3 6 9 4 1 8) - succes
+Testul 4: Invalidează un careu cu mai mult de 9 elemente pe linie (careul din exemplu unde linia a doua e 7 5 3 6 9 4 1 8 2 7) - succes
+Testul 5: Invalidează un careu ce conține elemente non numerice (careul din exemplu unde linia a doua e 7 X 3 6 9 4 1 8 2) - succes
+Testul 6: Invalidează un careu ce conține elemente din afara intervalului 1..9 (careul din exemplu unde linia a doua e 7 5 3 16 9 4 1 8 2) - succes
+Testul 7: Invalidează un careu ce conține elemente dublate pe prima linie (careul din exemplu unde prima linie e 1 1 8 5 7 2 6 4 3) - succes
+Testul 8: Invalidează un careu ce conține elemente dublate pe a doua coloană (careul din exemplu unde linia 8 e 8 1 5 3 6 9 4 7 2) - succes
+Testul 9: Invalidează un careu ce conține elemente dublate în primul bloc de 3x3 (careul din exemplu unde liniile 3 și 4 sunt inversate între ele) - succes
+Testul 10: Verifică corect că ciferele de la 1 la 9 apar o singură dată per linie, coloană sau bloc de 3x3 (toate elementele careului sunt 5) - succes
+Testul 11: Invalidează un careu ce conține 81 de elemente, dar dispuse greșit pe linii (careul din exemplu unde prima linie are 10 elemente: 9 1 8 5 7 2 6 4 3 7, iar a doua linie doar 8: 5 3 6 9 4 1 8 2) - succes
+Testul 12: Rezolvarea merge cu date de intrare aleatoare - succes
+Testul 13: Rezolvarea merge cu date de intrare aleatoare - succes
+
+
+REZOLVARE:
+using System;
+
+class Program
+{
+    private static void Main(string[] args)
+    {
+        int[,] sudoku = GetNumbersOfSudoku();
+        Console.WriteLine(VerifyValidityColomns(sudoku) && VerifyValidityRows(sudoku) && VerifyValiditySquares(sudoku));
+    }
+
+    static int[,] GetNumbersOfSudoku()
+    {
+        int[,] sudokuValues = new int[9, 9];
+        for (int i = 0; i < sudokuValues.GetLength(0); i++)
+        {
+            string[] inputNumbers = Console.ReadLine().Split(' ');
+            int indexOfInputNumbers = 0;
+            while (inputNumbers[indexOfInputNumbers] == "")
+            {
+                inputNumbers = Console.ReadLine().Split(' ');
+            }
+
+            if (inputNumbers.Length < sudokuValues.GetLength(0))
+            {
+                return sudokuValues;
+            }
+
+            for (int j = 0; j < sudokuValues.GetLength(1); j++)
+            {
+                if (indexOfInputNumbers == inputNumbers.Length)
+                {
+                    break;
+                }
+
+                while (!int.TryParse(inputNumbers[indexOfInputNumbers], out sudokuValues[i, j]))
+                {
+                    indexOfInputNumbers++;
+                }
+
+                indexOfInputNumbers++;
+            }
+
+            if (Convert.ToInt32(inputNumbers[inputNumbers.Length - 1]) != sudokuValues[i, sudokuValues.GetLength(1) - 1])
+            {
+                return sudokuValues;
+            }
+        }
+
+        return sudokuValues;
+    }
+
+    static int[,] MakeSquareArrays(int[,] sudokuValues, int rowIndex, int colomnIndex)
+    {
+        const int squareSize = 3;
+        int[,] squareArray = new int[squareSize, squareSize];
+        for (int i = 0; i < squareSize; i++)
+        {
+            for (int j = 0; j < squareSize; j++)
+            {
+                squareArray[i, j] = sudokuValues[rowIndex, colomnIndex];
+                colomnIndex++;
+            }
+
+            colomnIndex -= squareSize;
+            rowIndex++;
+        }
+
+        return squareArray;
+    }
+
+    static bool VerifyValidityColomns(int[,] sudokuValues, int rows = 1, int colomns = 9)
+    {
+        for (int i = 0; i < sudokuValues.GetLength(0); i++)
+        {
+            int[,] colomn = new int[rows, colomns];
+            for (int j = 0; j < sudokuValues.GetLength(1); j++)
+            {
+                colomn[0, j] = sudokuValues[j, i];
+            }
+
+            if (!CheckForNoRepetition(colomn))
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    static bool VerifyValidityRows(int[,] sudokuValues, int rows = 1, int colomns = 9)
+    {
+        for (int i = 0; i < sudokuValues.GetLength(0); i++)
+        {
+            int[,] row = new int[rows, colomns];
+            for (int j = 0; j < sudokuValues.GetLength(1); j++)
+            {
+                row[0, j] = sudokuValues[i, j];
+            }
+
+            if (!CheckForNoRepetition(row))
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    static bool VerifyValiditySquares(int[,] sudokuValues)
+    {
+        const int incementingPace = 2;
+        int[] indexesForSquaresFormation = { 0, 0, 0, 3, 0, 6, 3, 0, 3, 3, 3, 6, 6, 0, 6, 3, 6, 6 };
+        for (int i = 0; i < indexesForSquaresFormation.Length; i += incementingPace)
+        {
+            int[,] square = MakeSquareArrays(sudokuValues, indexesForSquaresFormation[i], indexesForSquaresFormation[i + 1]);
+            if (!CheckForNoRepetition(square))
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    static bool CheckForNoRepetition(int[,] sudokuValues)
+    {
+        const int permitedRepetitions = 1;
+        int[] digits = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        for (int i = 0; i < digits.Length; i++)
+        {
+            int numberOfRepetitions = 0;
+            foreach (int c in sudokuValues)
+            {
+                if (c == digits[i])
+                {
+                    numberOfRepetitions++;
+                }
+            }
+
+            if (numberOfRepetitions != permitedRepetitions)
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
+
+REZOLVARE JUNIORMIND CU CATEVA ADAUGARI DE VALIDARE:
+using System;
+
+class Program
+{
+    const int SudokuBoardSize = 9;
+    const int SudokuBlockSize = 3;
+
+    static void Main()
+    {
+        byte[,] sudokuBoard = new byte[SudokuBoardSize, SudokuBoardSize];
+        Console.WriteLine(ReadSudokuBoard(sudokuBoard) && IsValidSudokuBoard(sudokuBoard));
+        Console.Read();
+    }
+
+    static bool IsValidSudokuBoard(byte[,] sudokuBoard)
+    {
+        for (int i = 0; i < SudokuBoardSize; i++)
+        {
+            if (!IsValidSudokuItem(sudokuBoard, "line", i) ||
+                !IsValidSudokuItem(sudokuBoard, "column", i) ||
+                !IsValidSudokuItem(sudokuBoard, "block", i))
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    static bool IsValidSudokuItem(byte[,] sudokuBoard, string itemType, int itemIndex)
+    {
+        byte[] sudokuValuesCount = new byte[SudokuBoardSize];
+
+        for (int i = 0; i < SudokuBoardSize; i++)
+        {
+            byte sudokuValue = GetSudokuValue(sudokuBoard, itemType, itemIndex, i);
+            sudokuValuesCount[sudokuValue - 1]++;
+            string itemTypeRo = "";
+            switch (itemType)
+            {
+                case "line":
+                    itemTypeRo = "pe linia";
+                    break;
+                case "column":
+                    itemTypeRo = "pe coloana";
+                    break;
+                case "block":
+                    itemTypeRo = "in blocul";
+                    break;
+            }
+
+            if (sudokuValuesCount[sudokuValue - 1] > 1)
+            {
+                Console.WriteLine("Elementul {0} apare de mai multe ori {2} {1}", sudokuValue, itemIndex + 1, itemTypeRo);
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    static byte GetSudokuValue(byte[,] sudokuBoard, string itemType, int itemIndex, int position)
+    {
+        switch (itemType)
+        {
+            case "line":
+                return sudokuBoard[itemIndex, position];
+            case "column":
+                return sudokuBoard[position, itemIndex];
+            case "block":
+                int line = itemIndex / SudokuBlockSize * SudokuBlockSize + position / SudokuBlockSize;
+                int column = itemIndex % SudokuBlockSize * SudokuBlockSize + position % SudokuBlockSize;
+                return sudokuBoard[line, column];
+        }
+
+        return 0;
+    }
+
+    static bool ReadSudokuBoard(byte[,] sudokuBoard)
+    {
+        for (int i = 0; i < SudokuBoardSize; i++)
+        {
+            string[] lineValues = ReadLineValues();
+            if (lineValues.Length < SudokuBoardSize)
+            {
+                Console.WriteLine("Sunt sub {0} elemente pe linia {1}", SudokuBoardSize, i + 1);
+                return false;
+            }
+
+            if (lineValues.Length > SudokuBoardSize)
+            {
+                Console.WriteLine("Sunt mai mult de {0} elemente pe linia {1}", SudokuBoardSize, i + 1);
+                return false;
+            }
+
+            for (int j = 0; j < SudokuBoardSize; j++)
+            {
+                if (!IsValidSudokuValue(lineValues[j], out int value))
+                {
+                    Console.WriteLine("Element invalid pe linia {0}: {1}", i + 1, lineValues[j]);
+                    return false;
+                }
+
+                sudokuBoard[i, j] = (byte)value;
+            }
+        }
+
+        return true;
+    }
+
+    static string[] ReadLineValues()
+    {
+        string line;
+        do
+        {
+            line = Console.ReadLine();
+        }
+        while (line == "");
+
+        return line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+    }
+
+    static bool IsValidSudokuValue(string stringValue, out int value)
+    {
+        if (!int.TryParse(stringValue, out value))
+        {
+            return false;
+        }
+
+        if (value < 1 || value > SudokuBoardSize)
+        {
+            return false;
+        }
+
+        return true;
+    }
+}
+
+Problema de rezolvat:
+
+Se dă o frază pe o linie.
+Pe următoarea linie e un număr N, urmat de N linii cu câte un cuvânt valid pe linie.
+
+Să se scrie o aplicație ce analizează fraza dată și afișează sugestii de corectare a cuvintelor ce nu au fost găsite în lista de cuvinte valide:
+
+cuvinte cu o literă greșită (cuvinte valide ce au aceași lungime ca și cuvântul din frază, dar o literă diferită)
+cuvinte cu două litere inversate între ele (cuvinte valide obținute prin inversarea a două litere consecutive în cuvântul din frază)
+cuvinte cu o literă în plus (cuvinte valide obținute prin eliminarea unei singure litere din cuvântul prezent în frază)
+cuvinte cu o literă în minus (cuvinte valide obținute prin adăugarea unei singure litere la cuvântul din frază)
+Dacă fraza conține numai cuvinte valide se va afișa mesajul Text corect!
+
+Exemplul 1:
+
+Pentru datele de intrare:
+
+Acetsa e un texzt excelent da tet
+6
+acesta
+e
+un
+text
+de
+test
+La consolă se va afișa:
+
+acetsa: acesta
+texzt: text
+excelent: (nu sunt sugestii)
+da: de
+tet: text test
+Exemplul 2:
+
+Pentru datele de intrare:
+
+test nou
+3
+un
+test
+nou
+La consolă se va afișa:
+
+Text corect!
+Validarea Soluției 
+Rezolvarea trimisă nu este corectă. Detaliile din raportul de mai jos indică zona unde sunt probleme. Trimite rezolvarea din nou după ce ai corectat.
+
+Trimite fișierul Program.cs pentru validare după ce ai rezolvat problema
+
+Trimite rezolvarea
+ 3/30/2023, 4:04:20 PM - rezolvarea respinsă - ascunde detaliie...
+
+Fișier: Program.cs
+
+Rezultate:
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string[] givenText = Console.ReadLine().Split(' ');
+        string[] dictionary = MakeDictionary();
+        int correctWords = CheckWords(givenText, dictionary);
+    }
+
+    static int CheckWords(string[] giventext, string[] dictionary)
+    {
+        string[] wordsSuggestion = new string[giventext.Length];
+        int correctWords = 0;
+        for (int i = 0; i < giventext.Length; i++)
+        {
+            if (IsWordCorrect(giventext[i], dictionary))
+            {
+                correctWords++;
+                continue;
+            }
+
+            wordsSuggestion[i] = giventext[i] + ": ";
+            DictionarySugestion(giventext[i], dictionary, wordsSuggestion);
+        }
+
+        const string TextAllCorrect = "Text corect!";
+        if (correctWords == giventext.Length)
+        {
+            Console.WriteLine("{0}", correctWords == giventext.Length ? TextAllCorrect : "");
+        }
+
+        return correctWords;
+    }
+
+    static string[] MakeDictionary()
+    {
+        int lengthOfDitionary = Convert.ToInt32(Console.ReadLine());
+        string[] dictionary = new string[lengthOfDitionary];
+        for (int i = 0; i < lengthOfDitionary; i++)
+        {
+            dictionary[i] = Console.ReadLine();
+        }
+
+        return dictionary;
+    }
+
+    static bool IsWordCorrect(string word, string[] dictionary)
+    {
+       for (int i = 0; i < dictionary.Length; i++)
+       {
+            if (dictionary[i] == word.ToLower())
+            {
+                return true;
+            }
+       }
+
+       return false;
+    }
+
+    static void DictionarySugestion(string word, string[] dictionary, string[] wordsSuggestion)
+    {
+        const int half = 2;
+        int wordsFound = 0;
+        Console.Write(word + ": ");
+        for (int i = 0; i < dictionary.Length; i++)
+        {
+            string dictionaryWord = dictionary[i];
+            int sameDigits = WordComparison(word, dictionaryWord);
+            const bool reversed = true;
+            sameDigits = sameDigits >= word.Length / half && sameDigits >= dictionary[i].Length / half ? sameDigits : WordComparison(word, dictionaryWord, reversed);
+            word = word.ToLower();
+            if (sameDigits >= word.Length / half && sameDigits >= dictionary[i].Length / half)
+            {
+                Console.Write(dictionary[i] + " ");
+                wordsFound++;
+            }
+        }
+
+        PrintSuggestion(wordsFound);
+    }
+
+    static int WordComparison(string word, string dictionaryWord, bool reversed = false)
+    {
+        int sameDigits = 0;
+        for (int j = 0; j < word.Length; j++)
+        {
+            int a = j == 0 ? word.Length - 1 : word.Length - j - 1;
+            int b = j == 0 ? dictionaryWord.Length - 1 : dictionaryWord.Length - j - 1;
+            if (j == word.Length || j == dictionaryWord.Length || b == 0 || a == 0)
+            {
+                break;
+            }
+
+            sameDigits = DigitsComparison(j, a, b, word, dictionaryWord, sameDigits, reversed);
+        }
+
+        return sameDigits;
+    }
+
+    static int DigitsComparison(int j, int a, int b, string word, string dictionaryWord, int sameDigits, bool reversed)
+    {
+        if (word[j] == dictionaryWord[j] && !reversed)
+        {
+            sameDigits++;
+        }
+
+        if (word[a] == dictionaryWord[b] && sameDigits == j && reversed)
+        {
+            sameDigits++;
+        }
+
+        return sameDigits;
+    }
+
+    static void PrintSuggestion(int wordsFound)
+    {
+        const string defaultText = "(nu sunt sugestii)";
+
+        if (wordsFound == 0)
+        {
+            Console.Write(defaultText);
+        }
+
+        Console.WriteLine();
+    }
+}
+
+
+Compilare executată cu succes.
+Testul 1: Funcționează corect pentru cuvinte cu o literă greșită („abc”, 1, „abd”) - succes
+Testul 2: Funcționează corect pentru cuvinte cu 2 litere inversate („abc”, 1, „acb”) - succes
+Testul 3: Funcționează corect pentru cuvinte cu o literă în plus („abc”, 1, „ab”) - succes
+Testul 4: Funcționează corect pentru cuvinte cu o literă în minus („abc”, 1, „abcd”) - succes
+Testul 5: Funcționează corect pentru cuvinte fără sugestii („abc”, 1, „badc”) - succes
+Testul 6: Funcționează corect pentru cuvinte cu o frază corectă („abc def”, 2, „abc def”) - succes
+Testul 7: Funcționează corect pentru o frază mai complexă („Ana ara faorte mult meres gustoase”, 5, „ana are foarte multe mere”) - succes
+Testul 8: Funcționează corect pentru cuvinte ce au sugestii de mai multe tipuri („tist”, 2, „test trist”) - succes
+Testul 9: Rezolvarea merge cu date de intrare aleatoare - a eșuat
+
+
+REZOLVARE CORECTA:
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string[] givenText = Console.ReadLine().Split(' ');
+        string[] dictionary = MakeDictionary();
+        CheckWords(givenText, dictionary);
+    }
+
+    static void CheckWords(string[] giventext, string[] dictionary)
+    {
+        string[] wordsSuggestion = new string[giventext.Length];
+        int correctWords = 0;
+        for (int i = 0; i < giventext.Length; i++)
+        {
+            if (IsWordCorrect(giventext[i], dictionary))
+            {
+                correctWords++;
+                continue;
+            }
+
+            wordsSuggestion[i] = giventext[i] + ": ";
+            DictionarySugestion(giventext[i], dictionary, wordsSuggestion);
+        }
+
+        const string TextAllCorrect = "Text corect!";
+        Console.WriteLine("{0}", correctWords == giventext.Length ? TextAllCorrect : "");
+    }
+
+    static string[] MakeDictionary()
+    {
+        int lengthOfDitionary = Convert.ToInt32(Console.ReadLine());
+        string[] dictionary = new string[lengthOfDitionary];
+        for (int i = 0; i < lengthOfDitionary; i++)
+        {
+            dictionary[i] = Console.ReadLine();
+        }
+
+        return dictionary;
+    }
+
+    static bool IsWordCorrect(string word, string[] dictionary)
+    {
+       for (int i = 0; i < dictionary.Length; i++)
+       {
+            if (dictionary[i] == word.ToLower())
+            {
+                return true;
+            }
+       }
+
+       return false;
+    }
+
+    static void DictionarySugestion(string word, string[] dictionary, string[] wordsSuggestion)
+    {
+        int wordsFound = 0;
+        Console.Write(word + ": ");
+        for (int i = 0; i < dictionary.Length; i++)
+        {
+            string dictionaryWord = dictionary[i];
+            word = word.ToLower();
+            if (CheckOneLetterWrong(word, dictionaryWord) || CheckInversion(word, dictionaryWord) || CheckOneLetterPlus(word, dictionaryWord) || CheckOneLetterMinus(word, dictionaryWord))
+            {
+                Console.Write(dictionary[i] + " ");
+                wordsFound++;
+            }
+        }
+
+        PrintSuggestion(wordsFound);
+    }
+
+    static bool CheckOneLetterWrong(string word, string dictionaryWord)
+    {
+        int sameDigits = 0;
+        for (int j = 0; j < word.Length; j++)
+        {
+            if (word.Length != dictionaryWord.Length)
+            {
+                return false;
+            }
+
+            sameDigits += word[j] == dictionaryWord[j] ? 1 : 0;
+        }
+
+        return sameDigits == word.Length - 1;
+    }
+
+    static bool CheckInversion(string word, string dictionaryWord)
+    {
+        int i = 0;
+        while (i < word.Length - 1)
+        {
+            char[] wordCharArray = word.ToCharArray();
+            (wordCharArray[i + 1], wordCharArray[i]) = (wordCharArray[i], wordCharArray[i + 1]);
+            i++;
+            string inversedWord = new string(wordCharArray);
+            if (dictionaryWord == inversedWord)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    static bool CheckOneLetterPlus(string word, string dictionaryWord)
+    {
+        int i = 0;
+        while (i < word.Length)
+        {
+            string newWord = word.Remove(i, 1);
+            i++;
+            if (dictionaryWord == newWord)
+            {
+                    return true;
+            }
+        }
+
+        return false;
+    }
+
+    static bool CheckOneLetterMinus(string word, string dictionaryWord)
+    {
+        int i = 0;
+        while (i < dictionaryWord.Length)
+        {
+            string newDictionaryWord = dictionaryWord.Remove(i, 1);
+            i++;
+            if (word == newDictionaryWord)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    static void PrintSuggestion(int wordsFound)
+    {
+        const string defaultText = "(nu sunt sugestii)";
+
+        if (wordsFound == 0)
+        {
+            Console.Write(defaultText);
+        }
+
+        Console.WriteLine();
+    }
+}
+
+Problema de rezolvat:
+
+Să se scrie o aplicație ce convertește un număr întreg pozitiv dat din baza 10 în baza 2.
+
+Exemplul 1:
+
+Pentru datele de intrare:
+
+45
+La consolă se va afișa:
+
+101101
+Exemplul 2:
+
+Pentru datele de intrare:
+
+-45
+La consolă se va afișa:
+
+Programul converteste doar numere intregi pozitive.
+Fișier: Program.cs
+
+Rezultate:
+
+Compilare executată cu succes.
+Testul 1: Convertește corect un număr mic (6) - succes
+Testul 2: Convertește corect un număr mare (122457) - succes
+Testul 3: Numărul 1 e 1 și în baza doi - succes
+Testul 4: Tratează corect situația când utilizatorul nu introduce un număr (x) - succes
+Testul 5: Tratează corect situația când utilizatorul introduce un număr negativ (-2) - succes
+Testul 6: Rezolvarea merge cu date de intrare aleatoare - succes
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+       int inputNumber = GetInputNumber();
+       if (inputNumber == -1)
+        {
+            Console.WriteLine("Programul converteste doar numere intregi pozitive.");
+        }
+       else
+        {
+            BaseTwoTranfromer(inputNumber);
+        }
+    }
+
+    static int GetInputNumber()
+    {
+        if (int.TryParse(Console.ReadLine(), out int inputNumber) && inputNumber >= 0)
+        {
+            return inputNumber;
+        }
+
+        return -1;
+    }
+
+    static void BaseTwoTranfromer(int inputNumber)
+    {
+        const int Base = 2;
+        string resturi = "";
+        while (inputNumber != 0)
+        {
+            resturi += Convert.ToString(inputNumber % Base);
+            inputNumber /= Base;
+        }
+
+        PrintResult(resturi);
+    }
+
+    static void PrintResult(string resturi)
+    {
+        for (int i = resturi.Length - 1; i >= 0; i--)
+        {
+            Console.Write(resturi[i]);
+        }
+
+        Console.WriteLine();
+    }
+}
+
+
+
+using System;
+
+class Program
+{
+    const int AsciiOne = 97;
+    const int AsciiZero = 96;
+    const int BaseTen = 1;
+    const int BaseTwo = 2;
+    const int Not = 3;
+    const int Or = 4;
+    const int And = 5;
+    const int Xor = 6;
+    const int ShiftLeft = 7;
+    const int ShiftRight = 8;
+    const int LessThan = 9;
+    const int GreaterThan = 10;
+    const int Equal = 11;
+    const int NotEqual = 12;
+    const int Add = 13;
+    const int Subtract = 14;
+
+    static void Main()
+    {
+        int method = GetMethodNumber();
+        if (method <= Xor)
+        {
+            MainSplitFunctionOne(method);
+        }
+        else
+        {
+            MainSplitFunctionTwo(method);
+        }
+    }
+
+    static void MainSplitFunctionOne(int method)
+    {
+        switch (method)
+        {
+            case BaseTen:
+                BaseTenCase();
+                break;
+            case BaseTwo:
+                BaseTwoCase();
+                break;
+            case Not:
+                NotCase();
+                break;
+            case Or:
+                OrCase();
+                break;
+            case And:
+                AndCase();
+                break;
+            case Xor:
+                XorCase();
+                break;
+            default:
+                Console.WriteLine("Operatie invalida.");
+                break;
+        }
+    }
+
+    static void MainSplitFunctionTwo(int method)
+{
+    switch (method)
+    {
+        case ShiftLeft:
+            ShiftLeftOrRightCase(ShiftLeft);
+            break;
+        case ShiftRight:
+            ShiftLeftOrRightCase(ShiftRight);
+            break;
+        case LessThan:
+        case GreaterThan:
+        case Equal:
+        case NotEqual:
+            ComparisonCase(method);
+            break;
+        case Add:
+            AddCase();
+            break;
+        case Subtract:
+            SubstractCase();
+            break;
+        default:
+            Console.WriteLine("Operatie invalida.");
+            break;
+    }
+}
+
+    static void BaseTenCase()
+    {
+        int inputNumberBaseTen = GetInputNumberBaseTen();
+        if (inputNumberBaseTen == -1)
+        {
+            Console.WriteLine("Programul converteste doar numere intregi pozitive.");
+        }
+        else
+        {
+            BaseTwoTransformer(inputNumberBaseTen);
+        }
+    }
+
+    static void BaseTwoCase()
+    {
+        string inputNumberBaseTwo = GetInputNumberBaseTwo();
+        if (!ValidateBaseTwoNumber(inputNumberBaseTwo))
+        {
+            return;
+        }
+
+        BaseTenTransformer(inputNumberBaseTwo);
+    }
+
+    static void NotCase()
+    {
+        string inputNumberBaseTwoNot = GetInputNumberBaseTwo();
+        if (!ValidateBaseTwoNumber(inputNumberBaseTwoNot))
+        {
+            return;
+        }
+
+        BaseTwoNot(inputNumberBaseTwoNot);
+    }
+
+    static void OrCase()
+    {
+        string inputNumberOneOr = GetInputNumberBaseTwo();
+        string inputNumberTwoOr = GetInputNumberBaseTwo();
+        if (!ValidateBaseTwoNumber(inputNumberTwoOr) || !ValidateBaseTwoNumber(inputNumberOneOr))
+        {
+            return;
+        }
+
+        BaseTwoOrAndXor(inputNumberOneOr, inputNumberTwoOr, Or);
+    }
+
+    static void AndCase()
+    {
+        string inputNumberOneAnd = GetInputNumberBaseTwo();
+        string inputNumberTwoAnd = GetInputNumberBaseTwo();
+        if (!ValidateBaseTwoNumber(inputNumberTwoAnd) || !ValidateBaseTwoNumber(inputNumberOneAnd))
+        {
+            return;
+        }
+
+        BaseTwoOrAndXor(inputNumberOneAnd, inputNumberTwoAnd, And);
+    }
+
+    static void XorCase()
+    {
+        string inputNumberOneXor = GetInputNumberBaseTwo();
+        string inputNumberTwoXor = GetInputNumberBaseTwo();
+        if (!ValidateBaseTwoNumber(inputNumberTwoXor) || !ValidateBaseTwoNumber(inputNumberOneXor))
+        {
+            return;
+        }
+
+        BaseTwoOrAndXor(inputNumberOneXor, inputNumberTwoXor, Xor);
+    }
+
+    static void ShiftLeftOrRightCase(int method)
+    {
+        string inputNumberBaseTwoShiftLeft = GetInputNumberBaseTwo();
+        string positions = Console.ReadLine();
+        if (!ValidateBaseTwoNumber(inputNumberBaseTwoShiftLeft) || !ValidateShiftingNumber(positions))
+        {
+            return;
+        }
+
+        int position = Convert.ToInt32(positions);
+        ShiftToLeftOrRight(position, method, inputNumberBaseTwoShiftLeft);
+    }
+
+    static void ComparisonCase(int method)
+    {
+        string inputNumberOneLessThan = GetInputNumberBaseTwo();
+        string inputNumberTwoLessThan = GetInputNumberBaseTwo();
+        if (!ValidateBaseTwoNumber(inputNumberTwoLessThan) || !ValidateBaseTwoNumber(inputNumberOneLessThan))
+        {
+            return;
+        }
+
+        inputNumberOneLessThan = DeleteUselessZeros(inputNumberOneLessThan);
+        inputNumberTwoLessThan = DeleteUselessZeros(inputNumberTwoLessThan);
+        if (method == Equal || method == NotEqual)
+        {
+            Console.WriteLine(method == Equal ? EqualityVerification(inputNumberOneLessThan, inputNumberTwoLessThan, true, false)
+            : EqualityVerification(inputNumberOneLessThan, inputNumberTwoLessThan, false, true));
+        }
+        else if (method == LessThan || method == GreaterThan)
+        {
+            Console.WriteLine(method == LessThan ? LessThanComparison(inputNumberOneLessThan, inputNumberTwoLessThan, false, true)
+                : LessThanComparison(inputNumberOneLessThan, inputNumberTwoLessThan, true, false));
+        }
+    }
+
+    static void AddCase()
+    {
+        string inputNumberOne = DeleteUselessZeros(GetInputNumberBaseTwo());
+        string inputNumberTwo = DeleteUselessZeros(GetInputNumberBaseTwo());
+        if (!ValidateBaseTwoNumber(inputNumberTwo) || !ValidateBaseTwoNumber(inputNumberOne))
+        {
+            return;
+        }
+
+        string inputNumberSameSize = MakeInputNumberSameSize(inputNumberOne, inputNumberTwo);
+        string inputNumber = inputNumberOne.Length > inputNumberTwo.Length ? inputNumberOne : inputNumberTwo;
+        Addition(inputNumberSameSize, inputNumber);
+    }
+
+    static void SubstractCase()
+    {
+        string inputNumberOne = DeleteUselessZeros(GetInputNumberBaseTwo());
+        string inputNumberTwo = DeleteUselessZeros(GetInputNumberBaseTwo());
+        if (!ValidateBaseTwoNumber(inputNumberTwo) || !ValidateBaseTwoNumber(inputNumberOne))
+        {
+            return;
+        }
+
+        string inputNumberSameSize = inputNumberOne.Length > inputNumberTwo.Length ? inputNumberOne : MakeInputNumberSameSize(inputNumberOne, inputNumberTwo);
+        string inputNumber = inputNumberTwo.Length > inputNumberOne.Length ? inputNumberTwo : MakeInputNumberSameSize(inputNumberOne, inputNumberTwo);
+        Substraction(inputNumberSameSize, inputNumber);
+    }
+
+    static void Substraction(string inputNumberOne, string inputNumberTwo)
+    {
+        string result = "";
+        int rest = 0;
+        for (int i = 1; i < inputNumberOne.Length + 1; i++)
+        {
+            if (inputNumberOne[inputNumberOne.Length - i] == '1' && rest == 1 && i == inputNumberOne.Length)
+            {
+                break;
+            }
+
+            AddDigitPartOnee(Convert.ToInt32(inputNumberOne[inputNumberOne.Length - i]), Convert.ToInt32(inputNumberTwo[inputNumberTwo.Length - i]), ref rest, ref result);
+        }
+
+        PrintAdditionResult(result);
+    }
+
+    static void AddDigitPartOnee(int inputNumberOne, int inputNumberTwo, ref int rest, ref string result)
+    {
+        if (inputNumberOne == 1 && inputNumberTwo == '1' && rest == 1)
+        {
+            result += "1";
+        }
+        else if (inputNumberOne == 1 && inputNumberTwo == 1 && rest == 0)
+        {
+            result += "0";
+        }
+        else if (inputNumberOne - inputNumberTwo == -1 && rest == 0)
+        {
+            result += "1";
+            rest = 1;
+        }
+        else
+        {
+            AddDigitPartTwoo(inputNumberOne, inputNumberTwo, ref rest, ref result);
+        }
+    }
+
+    static void AddDigitPartTwoo(int inputNumberOne, int inputNumberTwo, ref int rest, ref string result)
+    {
+        if (inputNumberOne - inputNumberTwo == 1 && rest == 1)
+        {
+            result += "0";
+            rest = 0;
+        }
+        else if (inputNumberOne - inputNumberTwo == 1 && rest == 0)
+        {
+            result += "1";
+        }
+        else if (inputNumberOne - inputNumberTwo == 0 && rest == 1)
+        {
+            result += "1";
+        }
+        else if (inputNumberOne - inputNumberTwo == -1 && rest == 1)
+        {
+            result += "0";
+        }
+        else
+        {
+            result += "0";
+        }
+    }
+
+    static void Addition(string inputNumberOne, string inputNumberTwo)
+    {
+        string result = "";
+        int rest = 0;
+        for (int i = 1; i < inputNumberOne.Length + 1; i++)
+        {
+            AddDigitPartOne(inputNumberOne, i, inputNumberTwo, ref rest, ref result);
+        }
+
+        if (rest == 1)
+        {
+            result += "1";
+        }
+
+        PrintAdditionResult(result);
+    }
+
+    static void PrintAdditionResult(string result)
+    {
+        for (int i = result.Length - 1; i > -1; i--)
+        {
+            Console.Write(result[i]);
+        }
+    }
+
+    static void AddDigitPartOne(string inputNumberOne, int i, string inputNumberTwo, ref int rest, ref string result)
+    {
+        if (inputNumberOne[inputNumberOne.Length - i] == '1' && inputNumberTwo[inputNumberTwo.Length - i] == '1' && rest == 1)
+        {
+            result += "1";
+        }
+        else if (inputNumberOne[inputNumberOne.Length - i] == '1' && inputNumberTwo[inputNumberTwo.Length - i] == '1' && rest == 0)
+        {
+            result += "0";
+            rest++;
+        }
+        else if (inputNumberOne[inputNumberOne.Length - i] + inputNumberTwo[inputNumberTwo.Length - i] == AsciiOne && rest == 0)
+        {
+            result += "1";
+        }
+        else
+        {
+            AddDigitPartTwo(inputNumberOne, i, inputNumberTwo, ref rest, ref result);
+        }
+    }
+
+    static void AddDigitPartTwo(string inputNumberOne, int i, string inputNumberTwo, ref int rest, ref string result)
+    {
+        if (inputNumberOne[inputNumberOne.Length - i] + inputNumberTwo[inputNumberTwo.Length - i] == AsciiOne && rest == 1)
+        {
+            result += "0";
+        }
+        else if (inputNumberOne[inputNumberOne.Length - i] + inputNumberTwo[inputNumberTwo.Length - i] == AsciiZero && rest == 1)
+        {
+            result += "1";
+            rest--;
+        }
+        else
+        {
+            result += "0";
+        }
+    }
+
+    static bool EqualityVerification(string inputNumberOne, string inputNumberTwo, bool resultOne, bool resultTwo)
+    {
+        if (inputNumberOne == inputNumberTwo)
+        {
+            return resultOne;
+        }
+
+        return resultTwo;
+    }
+
+    static string DeleteUselessZeros(string inputNumber)
+    {
+        int indexOfFirstOne = 0;
+        bool firstOne = false;
+        for (int i = 0; i < inputNumber.Length; i++)
+        {
+            if (inputNumber[i] == '0' && !firstOne)
+            {
+                indexOfFirstOne++;
+            }
+            else
+            {
+                firstOne = true;
+            }
+        }
+
+        inputNumber = indexOfFirstOne == 0 ? inputNumber : inputNumber.Remove(0, indexOfFirstOne);
+        return inputNumber;
+    }
+
+    static bool LessThanComparison(string inputNumberOne, string inputNumberTwo, bool resultOne, bool resultTwo)
+    {
+        if (inputNumberOne.Length > inputNumberTwo.Length)
+        {
+            return resultOne;
+        }
+        else if (inputNumberOne.Length < inputNumberTwo.Length)
+        {
+            return resultTwo;
+        }
+        else
+        {
+            for (int i = 0; i < inputNumberOne.Length; i++)
+            {
+                if (inputNumberOne[i] < inputNumberTwo[i])
+                {
+                    return resultTwo;
+                }
+
+                if (inputNumberOne[i] > inputNumberTwo[i])
+                {
+                    return resultOne;
+                }
+            }
+        }
+
+        return resultOne;
+    }
+
+    static void ShiftToLeftOrRight(int positions, int method, string inputNumber)
+    {
+        if (method == ShiftLeft)
+        {
+            for (int i = positions; i > 0; i--)
+            {
+                inputNumber += '0';
+            }
+
+            Console.WriteLine(inputNumber);
+        }
+        else
+        {
+            int deletedDigits = inputNumber.Length - positions;
+            for (int i = 0; i < deletedDigits; i++)
+            {
+                Console.Write(inputNumber[i]);
+            }
+
+            Console.WriteLine("{0}", deletedDigits < 0 ? "0" : "");
+        }
+    }
+
+    static bool ValidateShiftingNumber(string positions)
+    {
+        if (int.TryParse(positions, out int validPositions) && validPositions > 0)
+        {
+            return true;
+        }
+
+        Console.WriteLine("Numarul de pozitii trebuie sa fie intreg si pozitiv.");
+        return false;
+    }
+
+    static int GetMethodNumber()
+    {
+        if (!int.TryParse(Console.ReadLine(), out int methodNumber) && methodNumber > 0 && methodNumber <= Or)
+        {
+            return -1;
+        }
+
+        return methodNumber;
+    }
+
+    static bool ValidateBaseTwoNumber(string inputNumber)
+    {
+        for (int i = 0; i < inputNumber.Length; i++)
+        {
+            if (inputNumber[i] != '0' && inputNumber[i] != '1')
+            {
+                Console.WriteLine("Nu s-a introdus un numar binar valid (format doar din 0 si 1).");
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    static string GetInputNumberBaseTwo()
+    {
+        return Convert.ToString(Console.ReadLine());
+    }
+
+    static int GetInputNumberBaseTen()
+    {
+        if (int.TryParse(Console.ReadLine(), out int inputNumber) && inputNumber >= 0)
+        {
+            return inputNumber;
+        }
+
+        return -1;
+    }
+
+    static string MakeInputNumberSameSize(string inputNumberOne, string inputNumberTwo)
+    {
+        int difSize = inputNumberOne.Length > inputNumberTwo.Length ? inputNumberOne.Length - inputNumberTwo.Length : inputNumberTwo.Length - inputNumberOne.Length;
+        string inputPlus = "";
+        for (int i = 0; i < difSize; i++)
+        {
+            inputPlus += "0";
+        }
+
+        inputPlus += inputNumberOne.Length <= inputNumberTwo.Length ? inputNumberOne : inputNumberTwo;
+        return inputPlus;
+    }
+
+    static bool CheckIfFirstOne(string otherInputNumber, string inputPlus, int method, int i)
+    {
+        if (method == And)
+        {
+            return otherInputNumber[i] == '1' && inputPlus[i] == '1';
+        }
+
+        return otherInputNumber[i] != inputPlus[i];
+    }
+
+    static void BaseTwoOrAndXor(string inputNumberOne, string inputNumberTwo, int method)
+    {
+            string inputPlus = MakeInputNumberSameSize(inputNumberOne, inputNumberTwo);
+            string otherInputNumber = inputNumberOne.Length <= inputNumberTwo.Length ? inputNumberTwo : inputNumberOne;
+            bool firstOne = false;
+            for (int i = 0; i < inputPlus.Length; i++)
+            {
+            bool responseOne = CheckIfFirstOne(otherInputNumber, inputPlus, method, i);
+            PrintResultCasesOrAndXor(method, inputPlus, otherInputNumber, i, ref firstOne, responseOne);
+            Console.Write("{0}", !firstOne && method == And && i == inputPlus.Length - 1 ? "0" : "");
+            }
+    }
+
+    static string GetOrderOfChar(int method)
+    {
+        switch (method)
+        {
+            case Or:
+                return "001";
+            case And:
+                return "110";
+            case Xor:
+                return "210";
+        }
+
+        return "";
+    }
+
+    static void PrintResultCasesOrAndXor(int method, string inputPlus, string otherInputNumber, int i, ref bool firstOne, bool responseOne)
+    {
+        const int indexOfOrder = 1;
+        firstOne = !firstOne && responseOne || firstOne;
+        string order = GetOrderOfChar(method);
+        if (!firstOne && (method == And || method == Xor))
+        {
+            return;
+        }
+
+        bool requirementsForXor = inputPlus[i] != otherInputNumber[i] && method == Xor;
+        Console.Write("{0}", (inputPlus[i] == otherInputNumber[i] && inputPlus[i] == order[indexOfOrder - 1]) || requirementsForXor ? order[indexOfOrder] : order[indexOfOrder + 1]);
+    }
+
+    static void BaseTwoNot(string inputNumber)
+    {
+        bool firstOne = false;
+        for (int i = 0; i < inputNumber.Length; i++)
+        {
+            firstOne = !firstOne && inputNumber[i] == '0' || firstOne;
+            if (!firstOne)
+            {
+                continue;
+            }
+
+            Console.Write(inputNumber[i] == '0' ? '1' : '0');
+        }
+
+        Console.WriteLine("{0}", firstOne ? "" : "0");
+    }
+
+    static void BaseTenTransformer(string inputNumber)
+    {
+        int result = 0;
+        for (int i = 0; i < inputNumber.Length; i++)
+        {
+            result += Convert.ToInt32(inputNumber[i].ToString()) * (int)Math.Pow(BaseTwo, inputNumber.Length - 1 - i);
+        }
+
+        Console.WriteLine(result);
+    }
+
+    static void BaseTwoTransformer(int inputNumber)
+    {
+        string resturi = "";
+        while (inputNumber != 0)
+        {
+            resturi += Convert.ToString(inputNumber % BaseTwo);
+            inputNumber /= BaseTwo;
+        }
+
+        PrintResultBaseTwo(resturi);
+    }
+
+    static void PrintResultBaseTwo(string resturi)
+    {
+        for (int i = resturi.Length - 1; i >= 0; i--)
+        {
+            Console.Write(resturi[i]);
+        }
+
+        Console.WriteLine();
+    }
+}
+
+using System;
+
+class Program
+{
+    const int AsciiOne = 97;
+    const int AsciiZero = 96;
+    const int BaseTen = 1;
+    const int BaseTwo = 2;
+    const int Not = 3;
+    const int Or = 4;
+    const int And = 5;
+    const int Xor = 6;
+    const int ShiftLeft = 7;
+    const int ShiftRight = 8;
+    const int LessThan = 9;
+    const int GreaterThan = 10;
+    const int Equal = 11;
+    const int NotEqual = 12;
+    const int Add = 13;
+    const int Subtract = 14;
+
+    static void Main()
+    {
+        int method = GetMethodNumber();
+        if (method <= Xor)
+        {
+            MainSplitFunctionOne(method);
+        }
+        else
+        {
+            MainSplitFunctionTwo(method);
+        }
+    }
+
+    static void MainSplitFunctionOne(int method)
+    {
+        switch (method)
+        {
+            case BaseTen:
+                BaseTenCase();
+                break;
+            case BaseTwo:
+                BaseTwoCase();
+                break;
+            case Not:
+                NotCase();
+                break;
+            case Or:
+                OrCase();
+                break;
+            case And:
+                AndCase();
+                break;
+            case Xor:
+                XorCase();
+                break;
+            default:
+                Console.WriteLine("Operatie invalida.");
+                break;
+        }
+    }
+
+    static void MainSplitFunctionTwo(int method)
+{
+    switch (method)
+    {
+        case ShiftLeft:
+            ShiftLeftOrRightCase(ShiftLeft);
+            break;
+        case ShiftRight:
+            ShiftLeftOrRightCase(ShiftRight);
+            break;
+        case LessThan:
+        case GreaterThan:
+        case Equal:
+        case NotEqual:
+            ComparisonCase(method);
+            break;
+        case Add:
+            AddCase();
+            break;
+        case Subtract:
+            SubstractCase();
+            break;
+        default:
+            Console.WriteLine("Operatie invalida.");
+            break;
+    }
+}
+
+    static void BaseTenCase()
+    {
+        int inputNumberBaseTen = GetInputNumberBaseTen();
+        if (inputNumberBaseTen == -1)
+        {
+            Console.WriteLine("Programul converteste doar numere intregi pozitive.");
+        }
+        else
+        {
+            BaseTwoTransformer(inputNumberBaseTen);
+        }
+    }
+
+    static void BaseTwoCase()
+    {
+        string inputNumberBaseTwo = GetInputNumberBaseTwo();
+        if (!ValidateBaseTwoNumber(inputNumberBaseTwo))
+        {
+            return;
+        }
+
+        BaseTenTransformer(inputNumberBaseTwo);
+    }
+
+    static void NotCase()
+    {
+        string inputNumberBaseTwoNot = GetInputNumberBaseTwo();
+        if (!ValidateBaseTwoNumber(inputNumberBaseTwoNot))
+        {
+            return;
+        }
+
+        BaseTwoNot(inputNumberBaseTwoNot);
+    }
+
+    static void OrCase()
+    {
+        string inputNumberOneOr = GetInputNumberBaseTwo();
+        string inputNumberTwoOr = GetInputNumberBaseTwo();
+        if (!ValidateBaseTwoNumber(inputNumberTwoOr) || !ValidateBaseTwoNumber(inputNumberOneOr))
+        {
+            return;
+        }
+
+        BaseTwoOrAndXor(inputNumberOneOr, inputNumberTwoOr, Or);
+    }
+
+    static void AndCase()
+    {
+        string inputNumberOneAnd = GetInputNumberBaseTwo();
+        string inputNumberTwoAnd = GetInputNumberBaseTwo();
+        if (!ValidateBaseTwoNumber(inputNumberTwoAnd) || !ValidateBaseTwoNumber(inputNumberOneAnd))
+        {
+            return;
+        }
+
+        BaseTwoOrAndXor(inputNumberOneAnd, inputNumberTwoAnd, And);
+    }
+
+    static void XorCase()
+    {
+        string inputNumberOneXor = GetInputNumberBaseTwo();
+        string inputNumberTwoXor = GetInputNumberBaseTwo();
+        if (!ValidateBaseTwoNumber(inputNumberTwoXor) || !ValidateBaseTwoNumber(inputNumberOneXor))
+        {
+            return;
+        }
+
+        BaseTwoOrAndXor(inputNumberOneXor, inputNumberTwoXor, Xor);
+    }
+
+    static void ShiftLeftOrRightCase(int method)
+    {
+        string inputNumberBaseTwoShiftLeft = GetInputNumberBaseTwo();
+        string positions = Console.ReadLine();
+        if (!ValidateBaseTwoNumber(inputNumberBaseTwoShiftLeft) || !ValidateShiftingNumber(positions))
+        {
+            return;
+        }
+
+        int position = Convert.ToInt32(positions);
+        ShiftToLeftOrRight(position, method, inputNumberBaseTwoShiftLeft);
+    }
+
+    static void ComparisonCase(int method)
+    {
+        string inputNumberOneLessThan = GetInputNumberBaseTwo();
+        string inputNumberTwoLessThan = GetInputNumberBaseTwo();
+        if (!ValidateBaseTwoNumber(inputNumberTwoLessThan) || !ValidateBaseTwoNumber(inputNumberOneLessThan))
+        {
+            return;
+        }
+
+        inputNumberOneLessThan = DeleteUselessZeros(inputNumberOneLessThan);
+        inputNumberTwoLessThan = DeleteUselessZeros(inputNumberTwoLessThan);
+        if (method == Equal || method == NotEqual)
+        {
+            Console.WriteLine(method == Equal ? EqualityVerification(inputNumberOneLessThan, inputNumberTwoLessThan, true, false)
+            : EqualityVerification(inputNumberOneLessThan, inputNumberTwoLessThan, false, true));
+        }
+        else if (method == LessThan || method == GreaterThan)
+        {
+            Console.WriteLine(method == LessThan ? LessThanComparison(inputNumberOneLessThan, inputNumberTwoLessThan, false, true)
+                : LessThanComparison(inputNumberOneLessThan, inputNumberTwoLessThan, true, false));
+        }
+    }
+
+    static void AddCase()
+    {
+        string inputNumberOne = DeleteUselessZeros(GetInputNumberBaseTwo());
+        string inputNumberTwo = DeleteUselessZeros(GetInputNumberBaseTwo());
+        if (!ValidateBaseTwoNumber(inputNumberTwo) || !ValidateBaseTwoNumber(inputNumberOne))
+        {
+            return;
+        }
+
+        string inputNumberSameSize = MakeInputNumberSameSize(inputNumberOne, inputNumberTwo);
+        string inputNumber = inputNumberOne.Length > inputNumberTwo.Length ? inputNumberOne : inputNumberTwo;
+        Addition(inputNumberSameSize, inputNumber);
+    }
+
+    static void SubstractCase()
+    {
+        string inputNumberOne = DeleteUselessZeros(GetInputNumberBaseTwo());
+        string inputNumberTwo = DeleteUselessZeros(GetInputNumberBaseTwo());
+        if (!ValidateBaseTwoNumber(inputNumberTwo) || !ValidateBaseTwoNumber(inputNumberOne))
+        {
+            return;
+        }
+
+        string inputNumberSameSize = inputNumberOne.Length > inputNumberTwo.Length ? inputNumberOne : inputNumberTwo;
+        string inputNumber = MakeInputNumberSameSize(inputNumberOne, inputNumberTwo);
+        Substraction(inputNumberSameSize, inputNumber);
+    }
+
+    static void Substraction(string inputNumberOne, string inputNumberTwo)
+    {
+        string result = "";
+        int rest = 0;
+        for (int i = 1; i < inputNumberOne.Length + 1; i++)
+        {
+            if (inputNumberOne[inputNumberOne.Length - i] == '1' && rest == 1 && i == inputNumberOne.Length)
+            {
+                break;
+            }
+
+            AddDigitPartOnee(Convert.ToInt32(inputNumberOne[inputNumberOne.Length - i]), Convert.ToInt32(inputNumberTwo[inputNumberTwo.Length - i]), ref rest, ref result);
+        }
+
+        PrintAdditionResult(result);
+    }
+
+    static void AddDigitPartOnee(int inputNumberOne, int inputNumberTwo, ref int rest, ref string result)
+    {
+        if (inputNumberOne == 1 && inputNumberTwo == '1' && rest == 1)
+        {
+            result += "1";
+        }
+        else if (inputNumberOne == 1 && inputNumberTwo == 1 && rest == 0)
+        {
+            result += "0";
+        }
+        else if (inputNumberOne - inputNumberTwo == -1 && rest == 0)
+        {
+            result += "1";
+            rest = 1;
+        }
+        else
+        {
+            AddDigitPartTwoo(inputNumberOne, inputNumberTwo, ref rest, ref result);
+        }
+    }
+
+    static void AddDigitPartTwoo(int inputNumberOne, int inputNumberTwo, ref int rest, ref string result)
+    {
+        if (inputNumberOne - inputNumberTwo == 1 && rest == 1)
+        {
+            result += "0";
+            rest = 0;
+        }
+        else if (inputNumberOne - inputNumberTwo == 1 && rest == 0)
+        {
+            result += "1";
+        }
+        else if (inputNumberOne - inputNumberTwo == 0 && rest == 1)
+        {
+            result += "1";
+        }
+        else if (inputNumberOne - inputNumberTwo == -1 && rest == 1)
+        {
+            result += "0";
+        }
+        else
+        {
+            result += "0";
+        }
+    }
+
+    static void Addition(string inputNumberOne, string inputNumberTwo)
+    {
+        string result = "";
+        int rest = 0;
+        for (int i = 1; i < inputNumberOne.Length + 1; i++)
+        {
+            AddDigitPartOne(inputNumberOne, i, inputNumberTwo, ref rest, ref result);
+        }
+
+        if (rest == 1)
+        {
+            result += "1";
+        }
+
+        PrintAdditionResult(result);
+    }
+
+    static void PrintAdditionResult(string result)
+    {
+        string reversedResult = "";
+        for (int i = result.Length - 1; i > -1; i--)
+        {
+            reversedResult += result[i];
+        }
+
+        Console.WriteLine(DeleteUselessZeros(reversedResult));
+    }
+
+    static void AddDigitPartOne(string inputNumberOne, int i, string inputNumberTwo, ref int rest, ref string result)
+    {
+        if (inputNumberOne[inputNumberOne.Length - i] == '1' && inputNumberTwo[inputNumberTwo.Length - i] == '1' && rest == 1)
+        {
+            result += "1";
+        }
+        else if (inputNumberOne[inputNumberOne.Length - i] == '1' && inputNumberTwo[inputNumberTwo.Length - i] == '1' && rest == 0)
+        {
+            result += "0";
+            rest++;
+        }
+        else if (inputNumberOne[inputNumberOne.Length - i] + inputNumberTwo[inputNumberTwo.Length - i] == AsciiOne && rest == 0)
+        {
+            result += "1";
+        }
+        else
+        {
+            AddDigitPartTwo(inputNumberOne, i, inputNumberTwo, ref rest, ref result);
+        }
+    }
+
+    static void AddDigitPartTwo(string inputNumberOne, int i, string inputNumberTwo, ref int rest, ref string result)
+    {
+        if (inputNumberOne[inputNumberOne.Length - i] + inputNumberTwo[inputNumberTwo.Length - i] == AsciiOne && rest == 1)
+        {
+            result += "0";
+        }
+        else if (inputNumberOne[inputNumberOne.Length - i] + inputNumberTwo[inputNumberTwo.Length - i] == AsciiZero && rest == 1)
+        {
+            result += "1";
+            rest--;
+        }
+        else
+        {
+            result += "0";
+        }
+    }
+
+    static bool EqualityVerification(string inputNumberOne, string inputNumberTwo, bool resultOne, bool resultTwo)
+    {
+        if (inputNumberOne == inputNumberTwo)
+        {
+            return resultOne;
+        }
+
+        return resultTwo;
+    }
+
+    static string DeleteUselessZeros(string inputNumber)
+    {
+        int indexOfFirstOne = 0;
+        bool firstOne = false;
+        for (int i = 0; i < inputNumber.Length; i++)
+        {
+            if (inputNumber[i] == '0' && !firstOne)
+            {
+                indexOfFirstOne++;
+            }
+            else
+            {
+                firstOne = true;
+            }
+        }
+
+        inputNumber = indexOfFirstOne == 0 ? inputNumber : inputNumber.Remove(0, indexOfFirstOne);
+        return inputNumber;
+    }
+
+    static bool LessThanComparison(string inputNumberOne, string inputNumberTwo, bool resultOne, bool resultTwo)
+    {
+        if (inputNumberOne.Length > inputNumberTwo.Length)
+        {
+            return resultOne;
+        }
+        else if (inputNumberOne.Length < inputNumberTwo.Length)
+        {
+            return resultTwo;
+        }
+        else
+        {
+            for (int i = 0; i < inputNumberOne.Length; i++)
+            {
+                if (inputNumberOne[i] < inputNumberTwo[i])
+                {
+                    return resultTwo;
+                }
+
+                if (inputNumberOne[i] > inputNumberTwo[i])
+                {
+                    return resultOne;
+                }
+            }
+        }
+
+        return resultOne;
+    }
+
+    static void ShiftToLeftOrRight(int positions, int method, string inputNumber)
+    {
+        if (method == ShiftLeft)
+        {
+            for (int i = positions; i > 0; i--)
+            {
+                inputNumber += '0';
+            }
+
+            Console.WriteLine(inputNumber);
+        }
+        else
+        {
+            int deletedDigits = inputNumber.Length - positions;
+            for (int i = 0; i < deletedDigits; i++)
+            {
+                Console.Write(inputNumber[i]);
+            }
+
+            Console.WriteLine("{0}", deletedDigits < 0 ? "0" : "");
+        }
+    }
+
+    static bool ValidateShiftingNumber(string positions)
+    {
+        if (int.TryParse(positions, out int validPositions) && validPositions > 0)
+        {
+            return true;
+        }
+
+        Console.WriteLine("Numarul de pozitii trebuie sa fie intreg si pozitiv.");
+        return false;
+    }
+
+    static int GetMethodNumber()
+    {
+        if (!int.TryParse(Console.ReadLine(), out int methodNumber) && methodNumber > 0 && methodNumber <= Or)
+        {
+            return -1;
+        }
+
+        return methodNumber;
+    }
+
+    static bool ValidateBaseTwoNumber(string inputNumber)
+    {
+        for (int i = 0; i < inputNumber.Length; i++)
+        {
+            if (inputNumber[i] != '0' && inputNumber[i] != '1')
+            {
+                Console.WriteLine("Nu s-a introdus un numar binar valid (format doar din 0 si 1).");
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    static string GetInputNumberBaseTwo()
+    {
+        return Convert.ToString(Console.ReadLine());
+    }
+
+    static int GetInputNumberBaseTen()
+    {
+        if (int.TryParse(Console.ReadLine(), out int inputNumber) && inputNumber >= 0)
+        {
+            return inputNumber;
+        }
+
+        return -1;
+    }
+
+    static string MakeInputNumberSameSize(string inputNumberOne, string inputNumberTwo)
+    {
+        int difSize = inputNumberOne.Length > inputNumberTwo.Length ? inputNumberOne.Length - inputNumberTwo.Length : inputNumberTwo.Length - inputNumberOne.Length;
+        string inputPlus = "";
+        for (int i = 0; i < difSize; i++)
+        {
+            inputPlus += "0";
+        }
+
+        inputPlus += inputNumberOne.Length <= inputNumberTwo.Length ? inputNumberOne : inputNumberTwo;
+        return inputPlus;
+    }
+
+    static bool CheckIfFirstOne(string otherInputNumber, string inputPlus, int method, int i)
+    {
+        if (method == And)
+        {
+            return otherInputNumber[i] == '1' && inputPlus[i] == '1';
+        }
+
+        return otherInputNumber[i] != inputPlus[i];
+    }
+
+    static void BaseTwoOrAndXor(string inputNumberOne, string inputNumberTwo, int method)
+    {
+            string inputPlus = MakeInputNumberSameSize(inputNumberOne, inputNumberTwo);
+            string otherInputNumber = inputNumberOne.Length <= inputNumberTwo.Length ? inputNumberTwo : inputNumberOne;
+            bool firstOne = false;
+            for (int i = 0; i < inputPlus.Length; i++)
+            {
+            bool responseOne = CheckIfFirstOne(otherInputNumber, inputPlus, method, i);
+            PrintResultCasesOrAndXor(method, inputPlus, otherInputNumber, i, ref firstOne, responseOne);
+            Console.Write("{0}", !firstOne && method == And && i == inputPlus.Length - 1 ? "0" : "");
+            }
+    }
+
+    static string GetOrderOfChar(int method)
+    {
+        switch (method)
+        {
+            case Or:
+                return "001";
+            case And:
+                return "110";
+            case Xor:
+                return "210";
+        }
+
+        return "";
+    }
+
+    static void PrintResultCasesOrAndXor(int method, string inputPlus, string otherInputNumber, int i, ref bool firstOne, bool responseOne)
+    {
+        const int indexOfOrder = 1;
+        firstOne = !firstOne && responseOne || firstOne;
+        string order = GetOrderOfChar(method);
+        if (!firstOne && (method == And || method == Xor))
+        {
+            return;
+        }
+
+        bool requirementsForXor = inputPlus[i] != otherInputNumber[i] && method == Xor;
+        Console.Write("{0}", (inputPlus[i] == otherInputNumber[i] && inputPlus[i] == order[indexOfOrder - 1]) || requirementsForXor ? order[indexOfOrder] : order[indexOfOrder + 1]);
+    }
+
+    static void BaseTwoNot(string inputNumber)
+    {
+        bool firstOne = false;
+        for (int i = 0; i < inputNumber.Length; i++)
+        {
+            firstOne = !firstOne && inputNumber[i] == '0' || firstOne;
+            if (!firstOne)
+            {
+                continue;
+            }
+
+            Console.Write(inputNumber[i] == '0' ? '1' : '0');
+        }
+
+        Console.WriteLine("{0}", firstOne ? "" : "0");
+    }
+
+    static void BaseTenTransformer(string inputNumber)
+    {
+        int result = 0;
+        for (int i = 0; i < inputNumber.Length; i++)
+        {
+            result += Convert.ToInt32(inputNumber[i].ToString()) * (int)Math.Pow(BaseTwo, inputNumber.Length - 1 - i);
+        }
+
+        Console.WriteLine(result);
+    }
+
+    static void BaseTwoTransformer(int inputNumber)
+    {
+        string resturi = "";
+        while (inputNumber != 0)
+        {
+            resturi += Convert.ToString(inputNumber % BaseTwo);
+            inputNumber /= BaseTwo;
+        }
+
+        PrintResultBaseTwo(resturi);
+    }
+
+    static void PrintResultBaseTwo(string resturi)
+    {
+        for (int i = resturi.Length - 1; i >= 0; i--)
+        {
+            Console.Write(resturi[i]);
+        }
+
+        Console.WriteLine();
+    }
+}
+
+variantă finala juniormind cu factorial adaugat de mine
+
+
+
+using System;
+
+namespace BinaryOperations
+{
+    class Program
+    {
+        const int NumericalBase = 2;
+
+        const int OperationConvertToBinary = 1;
+        const int OperationConvertFromBinary = 2;
+        const int OperationBinaryNot = 3;
+        const int OperationBinaryOr = 4;
+        const int OperationBinaryAnd = 5;
+        const int OperationBinaryXor = 6;
+        const int OperationBinaryShiftLeft = 7;
+        const int OperationBinaryShiftRight = 8;
+        const int OperationBinaryLessThan = 9;
+        const int OperationBinaryGreaterThan = 10;
+        const int OperationBinaryEqual = 11;
+        const int OperationBinaryNotEqual = 12;
+        const int OperationBinaryAdd = 13;
+        const int OperationBinarySubstract = 14;
+        const int OperationBinaryMultiply = 15;
+        const int OperationBinaryDivide = 16;
+        const int OperationBinaryFactorial = 17;
+
+        static void Main()
+        {
+            if (int.TryParse(Console.ReadLine(), out int operation) && operation >= OperationConvertToBinary && operation <= OperationBinaryFactorial)
+            {
+                ExecuteOperation(operation);
+            }
+            else
+            {
+                Console.WriteLine("Operatie invalida.");
+            }
+
+            Console.Read();
+        }
+
+        static void ExecuteOperation(int operation)
+        {
+            if (operation >= OperationConvertToBinary && operation <= OperationConvertFromBinary)
+            {
+                ExecuteConversionOperation(operation);
+                return;
+            }
+
+            if (operation >= OperationBinaryNot && operation <= OperationBinaryXor)
+            {
+                ExecuteLogicalOperation(operation);
+                return;
+            }
+
+            if (operation >= OperationBinaryShiftLeft && operation <= OperationBinaryShiftRight)
+            {
+                ExecuteShiftOperation(operation);
+                return;
+            }
+
+            if (operation >= OperationBinaryLessThan && operation <= OperationBinaryNotEqual)
+            {
+                ExecuteComparisonOperation(operation);
+                return;
+            }
+
+            ExecuteArithmeticalOperation(operation);
+        }
+
+        private static void ExecuteArithmeticalOperation(int operation)
+        {
+            if (operation == OperationBinaryDivide)
+            {
+                BinaryDivideOperation();
+                return;
+            }
+
+            if (operation == OperationBinaryFactorial)
+            {
+                BinaryFactorialOperation();
+            }
+            else
+            {
+                BaseBinaryOperation(operation);
+            }
+        }
+
+        private static void ExecuteLogicalOperation(int operation)
+        {
+            if (operation == OperationBinaryNot)
+            {
+                BinaryNotOperation();
+            }
+            else
+            {
+                BaseBinaryOperation(operation);
+            }
+        }
+
+        private static void ExecuteConversionOperation(int operation)
+        {
+            if (operation == OperationConvertToBinary)
+            {
+                ConvertToBinaryOperation();
+            }
+            else
+            {
+                ConvertFromBinaryOperation();
+            }
+        }
+
+        static void BinaryDivideOperation()
+        {
+            if (!ReadBinaryNumber(out byte[] firstBinaryNumber))
+            {
+                return;
+            }
+
+            if (!ReadBinaryNumber(out byte[] secondBinaryNumber))
+            {
+                return;
+            }
+
+            if (BinaryComparison(secondBinaryNumber, new byte[] { 0 }, OperationBinaryEqual))
+            {
+                Console.WriteLine("Nu se poate imparti la 0!");
+                return;
+            }
+
+            byte[] resultedBinaryNumber = BinaryDivide(firstBinaryNumber, secondBinaryNumber);
+            Console.WriteLine(BinaryNumberToString(resultedBinaryNumber));
+        }
+
+        static void BinaryFactorialOperation()
+        {
+            if (!ReadBinaryNumber(out byte[] firstBinaryNumber))
+            {
+                return;
+            }
+
+            byte[] resultedBinaryNumber = firstBinaryNumber;
+            byte[] secondBinaryNumber;
+            byte[] decrementalNumber = { 1 };
+            while (BinaryNumberToString(firstBinaryNumber) != "1")
+            {
+                secondBinaryNumber = BinarySubtract(firstBinaryNumber, decrementalNumber);
+                resultedBinaryNumber = BinaryMultiply(resultedBinaryNumber, secondBinaryNumber);
+                firstBinaryNumber = secondBinaryNumber;
+            }
+
+            Console.WriteLine(BinaryNumberToString(resultedBinaryNumber));
+        }
+
+        static byte[] BinaryAdd(byte[] firstBinaryNumber, byte[] secondBinaryNumber)
+        {
+            var (shorter, longer) = GetShorterAndLongerNumber(firstBinaryNumber, secondBinaryNumber);
+            byte[] result = new byte[longer.Length];
+            int reminder = 0;
+
+            for (int i = 0; i < shorter.Length; i++)
+            {
+                result[i] = (byte)((shorter[i] + longer[i] + reminder) % NumericalBase);
+                reminder = (shorter[i] + longer[i] + reminder) / NumericalBase;
+            }
+
+            for (int i = shorter.Length; i < longer.Length; i++)
+            {
+                result[i] = (byte)((longer[i] + reminder) % NumericalBase);
+                reminder = (longer[i] + reminder) / NumericalBase;
+            }
+
+            if (reminder == 1)
+            {
+                result = AddBinaryDigit(result, 1);
+            }
+
+            return result;
+        }
+
+        static void ExecuteComparisonOperation(int comparisonOperator)
+        {
+            if (!ReadBinaryNumber(out byte[] firstBinaryNumber))
+            {
+                return;
+            }
+
+            if (!ReadBinaryNumber(out byte[] secondBinaryNumber))
+            {
+                return;
+            }
+
+            Console.WriteLine(BinaryComparison(firstBinaryNumber, secondBinaryNumber, comparisonOperator));
+        }
+
+        static bool BinaryComparison(byte[] firstNumber, byte[] secondNumber, int comparisonOperator)
+        {
+            return comparisonOperator switch
+            {
+                OperationBinaryLessThan => BinaryLessThan(firstNumber, secondNumber),
+                OperationBinaryGreaterThan => BinaryLessThan(secondNumber, firstNumber),
+                OperationBinaryEqual => !BinaryLessThan(firstNumber, secondNumber) && !BinaryLessThan(secondNumber, firstNumber),
+                OperationBinaryNotEqual => BinaryLessThan(firstNumber, secondNumber) || BinaryLessThan(secondNumber, firstNumber),
+                _ => false,
+            };
+        }
+
+        static bool BinaryLessThan(byte[] firstBinaryNumber, byte[] secondBinaryNumber)
+        {
+            int firstLength = GetBinaryNumberRealLength(firstBinaryNumber);
+            int secondLength = GetBinaryNumberRealLength(secondBinaryNumber);
+
+            if (firstLength < secondLength)
+            {
+                return true;
+            }
+
+            if (firstLength > secondLength)
+            {
+                return false;
+            }
+
+            for (int i = firstLength - 1; i >= 0; i--)
+            {
+                if (firstBinaryNumber[i] > secondBinaryNumber[i])
+                {
+                    return false;
+                }
+
+                if (firstBinaryNumber[i] < secondBinaryNumber[i])
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        static int GetBinaryNumberRealLength(byte[] binaryNumber)
+        {
+            int result = binaryNumber.Length;
+            while (result > 1 && binaryNumber[result - 1] == 0)
+            {
+                result--;
+            }
+
+            return result;
+        }
+
+        static void ExecuteShiftOperation(int shiftType)
+        {
+            if (!ReadBinaryNumber(out byte[] binaryNumber))
+            {
+                return;
+            }
+
+            if (int.TryParse(Console.ReadLine(), out int positions) && positions < 0)
+            {
+                Console.WriteLine("Numarul de pozitii trebuie sa fie intreg si pozitiv.");
+                return;
+            }
+
+            byte[] resultedBinaryNumber = ApplyShiftOperation(binaryNumber, shiftType, positions);
+            Console.WriteLine(BinaryNumberToString(resultedBinaryNumber));
+        }
+
+        static byte[] ApplyShiftOperation(byte[] binaryNumber, int shiftType, int positions)
+        {
+            int newLength = shiftType == OperationBinaryShiftLeft ?
+                binaryNumber.Length + positions :
+                binaryNumber.Length - positions;
+
+            if (newLength < 1)
+            {
+                return new byte[] { 0 };
+            }
+
+            Array.Reverse(binaryNumber);
+            Array.Resize(ref binaryNumber, newLength);
+            Array.Reverse(binaryNumber);
+            return binaryNumber;
+        }
+
+        static void BaseBinaryOperation(int operationType)
+        {
+            if (!ReadBinaryNumber(out byte[] firstBinaryNumber))
+            {
+                return;
+            }
+
+            if (!ReadBinaryNumber(out byte[] secondBinaryNumber))
+            {
+                return;
+            }
+
+            byte[] resultedBinaryNumber = ApplyBinaryOperation(firstBinaryNumber, secondBinaryNumber, operationType);
+            Console.WriteLine(BinaryNumberToString(resultedBinaryNumber));
+        }
+
+        static byte[] ApplyBinaryOperation(byte[] firstBinaryNumber, byte[] secondBinaryNumber, int operationType)
+        {
+            switch (operationType)
+            {
+                case OperationBinaryOr:
+                case OperationBinaryAnd:
+                case OperationBinaryXor:
+                    return BinaryLogicalOperation(firstBinaryNumber, secondBinaryNumber, operationType);
+                case OperationBinaryAdd:
+                    return BinaryAdd(firstBinaryNumber, secondBinaryNumber);
+                case OperationBinarySubstract:
+                    return BinarySubtract(firstBinaryNumber, secondBinaryNumber);
+                case OperationBinaryMultiply:
+                    return BinaryMultiply(firstBinaryNumber, secondBinaryNumber);
+            }
+
+            return null;
+        }
+
+        static byte[] BinaryDivide(byte[] dividend, byte[] divisor)
+        {
+            byte[] result = { 0 };
+            while (BinaryLessThan(divisor, dividend) ||
+                   BinaryComparison(divisor, dividend, OperationBinaryEqual))
+            {
+                dividend = BinarySubtract(dividend, divisor);
+                result = BinaryAdd(result, new byte[] { 1 });
+            }
+
+            return result;
+        }
+
+        static byte[] BinaryMultiply(byte[] firstBinaryNumber, byte[] secondBinaryNumber)
+        {
+            var (bigger, smaller) = GetBiggerAndSmallerNumber(firstBinaryNumber, secondBinaryNumber);
+            byte[] result = { 0 };
+            for (byte[] index = { 0 }; BinaryLessThan(index, smaller); index = BinaryAdd(index, new byte[] { 1 }))
+            {
+                result = BinaryAdd(result, bigger);
+            }
+
+            return result;
+        }
+
+        static byte[] BinarySubtract(byte[] firstBinaryNumber, byte[] secondBinaryNumber)
+        {
+            var (bigger, smaller) = GetBiggerAndSmallerNumber(firstBinaryNumber, secondBinaryNumber);
+            byte[] result = new byte[GetBinaryNumberRealLength(bigger)];
+            int smallerLength = GetBinaryNumberRealLength(smaller);
+            int reminder = 0;
+
+            for (int i = 0; i < result.Length; i++)
+            {
+                int digit = i < smallerLength ?
+                    bigger[i] - smaller[i] - reminder :
+                    bigger[i] - reminder;
+
+                if (digit < 0)
+                {
+                    result[i] = (byte)(digit * -1 % NumericalBase);
+                    reminder = 1;
+                }
+                else
+                {
+                    result[i] = (byte)digit;
+                    reminder = 0;
+                }
+            }
+
+            return result;
+        }
+
+        static byte[] BinaryLogicalOperation(byte[] firstBinaryNumber, byte[] secondBinaryNumber, int operationType)
+        {
+            var (shorter, longer) = GetShorterAndLongerNumber(firstBinaryNumber, secondBinaryNumber);
+            byte[] result = new byte[longer.Length];
+
+            for (int i = 0; i < shorter.Length; i++)
+            {
+                result[i] = CalculateLogicalOperationResult(shorter[i], longer[i], operationType);
+            }
+
+            for (int i = shorter.Length; i < longer.Length; i++)
+            {
+                result[i] = CalculateLogicalOperationResult(0, longer[i], operationType);
+            }
+
+            return result;
+        }
+
+        static byte CalculateLogicalOperationResult(byte firstDigit, byte secondDigit, int operationType)
+        {
+            return operationType switch
+            {
+                OperationBinaryOr => (byte)(firstDigit + secondDigit > 0 ? 1 : 0),
+                OperationBinaryAnd => (byte)(firstDigit + secondDigit == NumericalBase ? 1 : 0),
+                OperationBinaryXor => (byte)(firstDigit + secondDigit == 1 ? 1 : 0),
+                _ => 0,
+            };
+        }
+
+        static (byte[] shorter, byte[] longer) GetShorterAndLongerNumber(byte[] firstBinaryNumber, byte[] secondBinaryNumber)
+        {
+            byte[] shorter;
+            byte[] longer;
+
+            if (firstBinaryNumber.Length > secondBinaryNumber.Length)
+            {
+                shorter = secondBinaryNumber;
+                longer = firstBinaryNumber;
+            }
+            else
+            {
+                shorter = firstBinaryNumber;
+                longer = secondBinaryNumber;
+            }
+
+            return (shorter, longer);
+        }
+
+        static (byte[] bigger, byte[] smaller) GetBiggerAndSmallerNumber(byte[] firstBinaryNumber, byte[] secondBinaryNumber)
+        {
+            byte[] bigger;
+            byte[] smaller;
+
+            if (BinaryLessThan(firstBinaryNumber, secondBinaryNumber))
+            {
+                bigger = secondBinaryNumber;
+                smaller = firstBinaryNumber;
+            }
+            else
+            {
+                bigger = firstBinaryNumber;
+                smaller = secondBinaryNumber;
+            }
+
+            return (bigger, smaller);
+        }
+
+        static void BinaryNotOperation()
+        {
+            if (!ReadBinaryNumber(out byte[] binaryNumber))
+            {
+                return;
+            }
+
+            binaryNumber = ApplyBinaryNot(binaryNumber);
+            Console.WriteLine(BinaryNumberToString(binaryNumber));
+        }
+
+        static byte[] ApplyBinaryNot(byte[] binaryNumber)
+        {
+            for (int i = 0; i < binaryNumber.Length; i++)
+            {
+                binaryNumber[i] = (byte)((binaryNumber[i] + 1) % NumericalBase);
+            }
+
+            return binaryNumber;
+        }
+
+        static void ConvertFromBinaryOperation()
+        {
+            if (!ReadBinaryNumber(out byte[] binaryNumber))
+            {
+                return;
+            }
+
+            Console.WriteLine(ConvertToDecimal(binaryNumber));
+        }
+
+        static bool ReadBinaryNumber(out byte[] binaryNumber)
+        {
+            bool result = TryParseBinaryNumberFromString(Console.ReadLine(), out binaryNumber);
+            if (!result)
+            {
+                Console.WriteLine("Nu s-a introdus un numar binar valid (format doar din 0 si 1).");
+            }
+
+            return result;
+        }
+
+        static int ConvertToDecimal(byte[] binaryNumber)
+        {
+            int result = 0;
+            int power = 1;
+            for (int i = 0; i < binaryNumber.Length; i++)
+            {
+                result += binaryNumber[i] * power;
+                power *= NumericalBase;
+            }
+
+            return result;
+        }
+
+        static bool TryParseBinaryNumberFromString(string binaryNumberText, out byte[] binaryNumber)
+        {
+            binaryNumber = new byte[binaryNumberText.Length];
+            if (binaryNumberText.Length == 0)
+            {
+                return false;
+            }
+
+            for (int i = 0; i < binaryNumberText.Length; i++)
+            {
+                if (binaryNumberText[i] != '0' && binaryNumberText[i] != '1')
+                {
+                    return false;
+                }
+
+                binaryNumber[binaryNumber.Length - i - 1] = Convert.ToByte(binaryNumberText[i].ToString());
+            }
+
+            return true;
+        }
+
+        static void ConvertToBinaryOperation()
+        {
+            if (int.TryParse(Console.ReadLine(), out int number) && number > 0)
+            {
+                byte[] binaryNumber = ConvertToBinary(number);
+                Console.WriteLine(BinaryNumberToString(binaryNumber));
+            }
+            else
+            {
+                Console.WriteLine("Programul converteste doar numere intregi pozitive.");
+            }
+        }
+
+        static string BinaryNumberToString(byte[] binaryNumber)
+        {
+            string result = "";
+            bool initialZeros = true;
+            for (int i = binaryNumber.Length - 1; i >= 0; i--)
+            {
+                if (binaryNumber[i] == 0 && initialZeros)
+                {
+                    continue;
+                }
+
+                initialZeros = false;
+                result += binaryNumber[i];
+            }
+
+            if (result == "")
+            {
+                result = "0";
+            }
+
+            return result;
+        }
+
+        static byte[] ConvertToBinary(int number)
+        {
+            byte[] result = null;
+            while (number != 0)
+            {
+                result = AddBinaryDigit(result, (byte)(number % NumericalBase));
+                number /= NumericalBase;
+            }
+
+            return result;
+        }
+
+        static byte[] AddBinaryDigit(byte[] binaryNumber, byte digit)
+        {
+            byte[] result = binaryNumber ?? (new byte[0]);
+            Array.Resize(ref result, result.Length + 1);
+
+            result[^1] = digit;
+            return result;
+        }
+    }
+}
+
+Problema:
+se da nr de produse 
+se da denumirea si pretul in formatul "nume produs: pret"
+se alege metoda de livrare : 0 - de la deposit cost 0 lei		
+							1 - curier cost 45 lei daca produsele nu depasesc 150 de lei
+							2 - curier rapid 90 de lei daca produsele nu depasesc 450 lei
+sa se scrie functia GetShippingPrice
+
+
+							using System;
+
+namespace Shopping
+{
+    enum ShippingType
+    {
+        Warehouse,
+        Courier,
+        Priority
+    }
+
+    struct Product
+    {
+        public string Name;
+        public decimal Price;
+
+        public Product(string name, decimal price)
+        {
+            this.Name = name;
+            this.Price = price;
+        }
+    }
+
+    class Program
+    {
+        const decimal MinimumValueForFreeCourier = 150;
+        const decimal MinimumValueForFreePriority = 450;
+        const decimal CourierShippingCost = 45;
+        const decimal PriorityShippingCost = 90;
+
+        static void Main()
+        {
+            Product[] shoppingList = ReadShoppingList();
+            ShippingType shippingMethod = (ShippingType)Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(GetTotalPrice(shoppingList, shippingMethod));
+            Console.Read();
+        }
+
+        static decimal GetTotalPrice(Product[] shoppingList, ShippingType shippingMethod)
+        {
+            decimal result = 0;
+            for (int i = 0; i < shoppingList.Length; i++)
+            {
+                result += shoppingList[i].Price;
+            }
+
+            result += GetShippingPrice(result, shippingMethod);
+            return result;
+        }
+
+        static decimal GetShippingPrice(decimal productsPrice, ShippingType shippingMethod)
+        {
+            decimal result = 0;
+            if (shippingMethod == ShippingType.Warehouse)
+            {
+                return result;
+            }
+
+            if (shippingMethod == ShippingType.Courier)
+            {
+                result += productsPrice > MinimumValueForFreeCourier ? 0 : CourierShippingCost;
+                return result;
+            }
+
+            if (shippingMethod == ShippingType.Priority)
+            {
+                result += productsPrice > MinimumValueForFreePriority ? 0 : PriorityShippingCost;
+            }
+
+            return result;
+        }
+
+        static Product[] ReadShoppingList()
+        {
+            int numberOfProducts = Convert.ToInt32(Console.ReadLine());
+            Product[] result = new Product[numberOfProducts];
+            for (int i = 0; i < numberOfProducts; i++)
+            {
+                string[] item = Console.ReadLine().Split(':');
+                result[i] = new Product(item[0], Convert.ToDecimal(item[1]));
+            }
+
+            return result;
+        }
+    }
+}
+
+Problema de rezolvat:
+
+Descarcă proiectul atașat problemei și continuă rezolvarea. Trebuie implementate funcțiile AddDayToAlert și CheckAlarmDay și apoi se trimite – ca de obicei – fișierul Program.cs pentru validare.
+
+Problema:
+
+O alarmă poate fi configurată să se declanșeze la o anumită oră în una sau mai multe zile din săptămână. De exemplu, să se declanșeze la ora 8:00 de luni până vineri și de la ora 10:00 sâmbăta și duminica.
+
+Să se scrie o aplicație consolă ce verifică dacă alarma se declanșează la o oră și zi date.
+
+Datele de intrare se dau astfel:
+
+pe prima linie numărul de alerte configurate
+pentru fiecare alertă urmează două linii:
+ora alertei în format hh:mm
+zilele în care se declanșează (una sau mai multe din următoarele, despărțite între ele printr-un spațiu: Su Mo Tu We Th Fr Sa)
+la sfârșit pe ultimile două linii se dau ora și ziua pentru care se face verificarea.
+Exemplu:
+
+Pentru datele de intrare:
+
+2
+12:00
+Mo Tu We
+13:30
+Th Fr Sa Su
+13:30
+We
+La consolă se va afișa:
+
+False
+Validarea Soluției 
+Rezolvarea trimisă este corectă.
+
+ 4/22/2023, 1:50:30 PM - rezolvarea corectă - ascunde detaliie...
+
+Fișier: Program.cs
+
+Rezultate:
+
+Compilare executată cu succes.
+Testul 1: Verifică corect o alertă simplă (1, 14:00 Mo, 14:00 Mo) - succes
+Testul 2: Verifică corect o alertă simplă ce nu se declanșează la ora dată (1, 14:00 Mo, 15:00 Mo) - succes
+Testul 3: Verifică corect o alertă simplă ce nu se declanșează în ziua dată (1, 14:00 Mo, 14:00 Tu) - succes
+Testul 4: Verifică corect o alertă mai complexă (1, 14:00 Mo Tu We, 14:00 Tu) - succes
+Testul 5: Verifică corect o alertă mai complexă ce nu se declanșează în ziua de dată (1, 14:00 Mo Tu We, 14:00 Th) - succes
+Testul 6: Verifică corect mai multe alerte (2, 14:00 Mo Tu We, 17:20 We Th Fr, 17:20 Fr) - succes
+Testul 7: Verifică corect mai multe alerte ce nu se declanșează în ziua dată (2, 14:00 Mo Tu We, 17:20 We Th Fr, 14:00 Fr) - succes
+Testul 8: Rezolvarea merge cu date de intrare aleatoare - succes
+
+
+
+hint : Cele două funcții ce trebuie implementate reprezintă adăgarea și verificarea unui flag.
+
+
+using System;
+
+namespace Alarm
+{
+    [Flags]
+    enum Days
+    {
+        None = 0,
+        Su = 1,
+        Mo = 1 << 1,
+        Tu = 1 << 2,
+        We = 1 << 3,
+        Th = 1 << 4,
+        Fr = 1 << 5,
+        Sa = 1 << 6
+    }
+
+    struct Time
+    {
+        public int Hour;
+        public int Minutes;
+
+        public Time(int hour, int minutes)
+        {
+            this.Hour = hour;
+            this.Minutes = minutes;
+        }
+    }
+
+    struct Alert
+    {
+        public Time Time;
+        public Days Days;
+
+        public Alert(Time time, Days days = Days.None)
+        {
+            this.Time = time;
+            this.Days = days;
+        }
+    }
+
+    class Program
+    {
+        static void Main()
+        {
+            int countOfAlerts = Convert.ToInt32(Console.ReadLine());
+            Alert[] alerts = new Alert[countOfAlerts];
+
+            for (int i = 0; i < alerts.Length; i++)
+            {
+                alerts[i] = ReadAlert();
+            }
+
+            Time timeToCheck = ReadTime();
+            Days dayToCheck = GetDay(Console.ReadLine());
+
+            Console.WriteLine(CheckAlarm(alerts, timeToCheck, dayToCheck));
+            Console.Read();
+        }
+
+        static bool CheckAlarm(Alert[] alerts, Time timeToCheck, Days dayToCheck)
+        {
+            for (int i = 0; i < alerts.Length; i++)
+            {
+                if (!CheckAlarmTime(alerts[i].Time, timeToCheck))
+                {
+                    continue;
+                }
+
+                if (CheckAlarmDay(alerts[i].Days, dayToCheck))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        static bool CheckAlarmDay(Days days, Days dayToCheck)
+        {
+            return (days & dayToCheck) != 0;
+        }
+
+        static bool CheckAlarmTime(Time time, Time timeToCheck)
+        {
+            return time.Hour == timeToCheck.Hour && time.Minutes == timeToCheck.Minutes;
+        }
+
+        static Alert ReadAlert()
+        {
+            Alert result = new Alert(ReadTime());
+
+            string[] days = Console.ReadLine().Split(' ');
+            for (int i = 0; i < days.Length; i++)
+            {
+                AddDayToAlert(ref result, GetDay(days[i]));
+            }
+
+            return result;
+        }
+
+        static Time ReadTime()
+        {
+            string[] time = Console.ReadLine().Split(':');
+            return new Time(Convert.ToInt32(time[0]), Convert.ToInt32(time[1]));
+        }
+
+        static void AddDayToAlert(ref Alert result, Days day)
+        {
+            result.Days |= day;
+        }
+
+        static Days GetDay(string day)
+        {
+            return day switch
+            {
+                "Mo" => Days.Mo,
+                "Tu" => Days.Tu,
+                "We" => Days.We,
+                "Th" => Days.Th,
+                "Fr" => Days.Fr,
+                "Sa" => Days.Sa,
+                _ => Days.Su,
+            };
+        }
+    }
+}
+
+
+Problema: program care sa calculeze diametrul unui patrulater prin aflarea dimensiunii fiecarei laturi
+se citesc de la tastatura punctele colurilor incepand cu cel de stanga sus si continuand in sensul acelor de ceasornic
+
+rezolvare:
+
+
+using System;
+
+namespace QuadrilateralPerimeter
+{
+    struct Point
+    {
+        public double X;
+        public double Y;
+
+        public Point(double x, double y)
+        {
+            this.X = x;
+            this.Y = y;
+        }
+    }
+
+    struct Quadrilateral
+    {
+        public Point A;
+        public Point B;
+        public Point C;
+        public Point D;
+
+        public Quadrilateral(Point a, Point b, Point c, Point d)
+        {
+            this.A = a;
+            this.B = b;
+            this.C = c;
+            this.D = d;
+        }
+    }
+
+    class Program
+    {
+        static void Main()
+        {
+            Quadrilateral quadrilateral = new Quadrilateral(ReadPoint(), ReadPoint(), ReadPoint(), ReadPoint());
+            Console.WriteLine(CalculatePerimeter(quadrilateral));
+            Console.Read();
+        }
+
+        static double CalculatePerimeter(Quadrilateral quadrilateral)
+        {
+            double topSideLength = CalculateSide(quadrilateral.A, quadrilateral.B);
+            double bottomSideLength = CalculateSide(quadrilateral.C, quadrilateral.D);
+            double leftSideLength = CalculateSide(quadrilateral.A, quadrilateral.D);
+            double rightSideLength = CalculateSide(quadrilateral.B, quadrilateral.C);
+            return topSideLength + bottomSideLength + leftSideLength + rightSideLength;
+        }
+
+        static double CalculateSide(Point a, Point b)
+        {
+            double result = Math.Pow(b.X - a.X, 2) + Math.Pow(b.Y - a.Y, 2);
+            return Math.Sqrt(result);
+        }
+
+        static Point ReadPoint()
+        {
+            string[] point = Console.ReadLine().Split(' ');
+            return new Point(Convert.ToDouble(point[0]), Convert.ToDouble(point[1]));
+        }
+    }
+}
+
+
+Problema de rezolvat:
+
+Să se scrie o aplicație consolă ce primește o parolă și verifică dacă aceasta îndeplinește condițiile de complexitate.
+
+Aplicația primește pe prima linie parola, iar pe următoarele linii condițiile de complexitate, astfel:
+
+numărul minim de litere mici
+numărul minim de litere mari
+numărul minim de cifre
+numărul minim de simboluri
+poate conține caractere similare: l, 1, I, o, 0, O
+poate conține caractere ambigue: {}[]()/\'"~,;.<>
+Exemplu:
+
+Pentru datele de intrare:
+
+abcdeA2+
+5
+1
+1
+1
+false
+true
+La consolă se va afișa:
+
+True
+Validarea Soluției 
+Rezolvarea trimisă este corectă.
+
+ 4/24/2023, 2:09:22 AM - rezolvarea corectă - ascunde detaliie...
+
+Fișier: Program.cs
+
+Rezultate:
+
+Compilare executată cu succes.
+Testul 1: Determină corect că parola îndeplinește condițiile de complexitate când tipurile de caractere sunt grupate (”abcdeAB12+-”, 5, 2, 2, 2, true, true) - succes
+Testul 2: Determină corect că parola îndeplinește condițiile de complexitate când tipurile de caractere sunt amestecate (”a+bB-1cdeA2fG=3”, 5, 2, 2, 2, true, true) - succes
+Testul 3: Determină corect că parola nu îndeplinește condițiile de complexitate când nu sunt suficiente litere mici (”AbcdeAB12+-”, 5, 2, 2, 2, true, true) - succes
+Testul 4: Determină corect că parola nu îndeplinește condițiile de complexitate când nu sunt suficiente litere mari (”abcdeAb12+-”, 5, 2, 2, 2, true, true) - succes
+Testul 5: Determină corect că parola nu îndeplinește condițiile de complexitate când nu sunt suficiente cifre (”abcdeAB2+-”, 5, 2, 2, 2, true, true) - succes
+Testul 6: Determină corect că parola nu îndeplinește condițiile de complexitate când nu sunt suficiente simboluri (”AbcdeAB12m-”, 5, 2, 2, 2, true, true) - succes
+Testul 7: Determină corect că parola îndeplinește condițiile de complexitate când conține și sunt cerute 0 litere mici (”ABCDE12+-”, 0, 2, 2, 2, true, true) - succes
+Testul 8: Determină corect că parola îndeplinește condițiile de complexitate când conține și sunt cerute 0 litere mari (”abcde12+-”, 5, 0, 2, 2, true, true) - succes
+Testul 9: Determină corect că parola îndeplinește condițiile de complexitate când conține și sunt cerute 0 cifre (”abcdeFG+-”, 5, 2, 0, 2, true, true) - succes
+Testul 10: Determină corect că parola îndeplinește condițiile de complexitate când conține și sunt cerute 0 simboluri (”abcdeFG12”, 5, 2, 2, 0, true, true) - succes
+Testul 11: Determină corect că parola îndeplinește condițiile de complexitate când nu conține și nu are voie să conțină caractere similare (”abcdeAB23+-”, 5, 2, 2, 2, false, true) - succes
+Testul 12: Determină corect că parola nu îndeplinește condițiile de complexitate când conține și nu are voie să conțină caractere similare (”abcdeAB123+-”, 5, 2, 2, 2, false, true) - succes
+Testul 13: Determină corect că parola îndeplinește condițiile de complexitate când conține și are voie să conțină caractere ambigue (”abcde"AB\23”, 5, 2, 2, 2, true, true) - succes
+Testul 14: Determină corect că parola îndeplinește condițiile de complexitate când nu conține și nu are voie să conțină caractere ambigue (”abcdeAB23+-”, 5, 2, 2, 2, true, false) - succes
+Testul 15: Determină corect că parola nu îndeplinește condițiile de complexitate când conține și nu are voie să conțină caractere ambigue (”abcde"AB\23”, 5, 2, 2, 2, true, false) - succes
+Testul 16: Rezolvarea merge cu date de intrare aleatoare - succes
+
+
+
+
+REZOLVARE
+
+using System;
+
+namespace CheckPasswordComplexity
+{
+    enum AsciiValues
+    {
+        AsciiNumberForLowerA = 97,
+        AsciiNumberForLowerZ = 122,
+        AsciiNumberForUpperA = 65,
+        AsciiNumberForUpperZ = 90,
+        AsciiNumberForZero = 48,
+        AsciiNumberForNine = 57,
+        FirstAsciiNumberForFirstSimbolInterval = 33,
+        LastAsciiNumberForFirstSimbolInterval = 47,
+        FirstAsciiNumberForSecondSimbolInterval = 58,
+        LastAsciiNumberForSecondSimbolInterval = 64,
+        FirstAsciiNumberForThirdSimbolInterval = 91,
+        LastAsciiNumberForThirdSimbolInterval = 96
+    }
+
+    public struct PasswordRequirements
+    {
+        public int MinimumLowerCases;
+        public int MinimumUpperCases;
+        public int MinimumDigits;
+        public int MinimumSimbols;
+        public bool SimilarCharacters;
+        public bool AmbiguousCharacters;
+
+        public PasswordRequirements(
+            int minimumLowerCases,
+            int minimumUpperCases,
+            int minimumDigits,
+            int minimumSimbols,
+            bool similarCharacters,
+            bool ambiguousCharacters)
+        {
+            this.MinimumLowerCases = minimumLowerCases;
+            this.MinimumUpperCases = minimumUpperCases;
+            this.MinimumDigits = minimumDigits;
+            this.MinimumSimbols = minimumSimbols;
+            this.SimilarCharacters = similarCharacters;
+            this.AmbiguousCharacters = ambiguousCharacters;
+        }
+    }
+
+    public class Program
+    {
+        public static bool CheckIfPasswordCorrect(string password, PasswordRequirements passwordRequirements)
+        {
+            if (!CheckMinimumChars(password, passwordRequirements))
+            {
+                return false;
+            }
+
+            if (!passwordRequirements.SimilarCharacters &&
+                CheckSimilarCharacters(password))
+            {
+                return false;
+            }
+
+            if (!passwordRequirements.AmbiguousCharacters &&
+                 CheckAmbiguousCharacters(password))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        private static bool CheckMinimumChars(string password, PasswordRequirements passwordRequirements)
+        {
+            if (passwordRequirements.MinimumLowerCases > 0 &&
+                !CheckMinimumLowerCases(password, passwordRequirements.MinimumLowerCases))
+            {
+                return false;
+            }
+
+            if (passwordRequirements.MinimumUpperCases > 0 &&
+                !CheckMinimumUpperCases(password, passwordRequirements.MinimumUpperCases))
+            {
+                return false;
+            }
+
+            if (passwordRequirements.MinimumDigits > 0 &&
+                !CheckMinimumDigits(password, passwordRequirements.MinimumDigits))
+            {
+                return false;
+            }
+
+            if (passwordRequirements.MinimumSimbols > 0 &&
+                !CheckMinimumSimbols(password, passwordRequirements.MinimumSimbols))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        private static bool CheckAmbiguousCharacters(string password)
+        {
+            char[] ambigousChars = { '{', '}', '[', ']', '(', ')', '/', '\\', '"', '~', ',', ';', '.', '<', '>' };
+            return SearchCharsInString(password, ambigousChars);
+        }
+
+        private static bool CheckSimilarCharacters(string password)
+        {
+            char[] similarChars = { 'l', '1', 'I', 'o', '0', 'O' };
+            return SearchCharsInString(password, similarChars);
+        }
+
+        private static bool SearchCharsInString(string password, char[] givenChars)
+        {
+            for (int character = 0; character < password.Length; character++)
+            {
+                foreach (char c in givenChars)
+                {
+                    if (password[character] == c)
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        private static bool CheckMinimumSimbols(string password, int minimumSimbols)
+        {
+            int simbolsFound = 0;
+            for (int character = 0; character < password.Length && simbolsFound < minimumSimbols; character++)
+            {
+                if ((int)password[character] >= (int)AsciiValues.FirstAsciiNumberForFirstSimbolInterval &&
+                    (int)password[character] <= (int)AsciiValues.LastAsciiNumberForFirstSimbolInterval)
+                {
+                    simbolsFound++;
+                }
+
+                if ((int)password[character] >= (int)AsciiValues.FirstAsciiNumberForSecondSimbolInterval &&
+                    (int)password[character] <= (int)AsciiValues.LastAsciiNumberForSecondSimbolInterval)
+                {
+                    simbolsFound++;
+                }
+
+                if ((int)password[character] >= (int)AsciiValues.FirstAsciiNumberForThirdSimbolInterval &&
+                    (int)password[character] <= (int)AsciiValues.LastAsciiNumberForThirdSimbolInterval)
+                {
+                    simbolsFound++;
+                }
+            }
+
+            return simbolsFound == minimumSimbols;
+        }
+
+        private static bool CheckMinimumDigits(string password, int minimumDigits)
+        {
+            return CheckCharactersInAsciiTable(
+                password,
+                minimumDigits,
+                AsciiValues.AsciiNumberForZero,
+                AsciiValues.AsciiNumberForNine);
+        }
+
+        private static bool CheckMinimumLowerCases(string password, int minimumLowerCases)
+        {
+            return CheckCharactersInAsciiTable(
+                password,
+                minimumLowerCases,
+                AsciiValues.AsciiNumberForLowerA,
+                AsciiValues.AsciiNumberForLowerZ);
+        }
+
+        private static bool CheckCharactersInAsciiTable(
+            string password,
+            int minimumCharacters,
+            AsciiValues firstCharacterNumberInAscii,
+            AsciiValues secondCharacterNumberInAscii)
+        {
+            int charactersFoundInPassword = 0;
+            for (int character = 0; character < password.Length && charactersFoundInPassword < minimumCharacters; character++)
+            {
+                if ((int)password[character] >= (int)firstCharacterNumberInAscii &&
+                    (int)password[character] <= (int)secondCharacterNumberInAscii)
+                {
+                    charactersFoundInPassword++;
+                }
+            }
+
+            return charactersFoundInPassword == minimumCharacters;
+        }
+
+        private static bool CheckMinimumUpperCases(string password, int minimumUpperCases)
+        {
+            return CheckCharactersInAsciiTable(password, minimumUpperCases, AsciiValues.AsciiNumberForUpperA, AsciiValues.AsciiNumberForUpperZ);
+        }
+
+        static void Main()
+        {
+            string password = Console.ReadLine();
+            PasswordRequirements passwordRequirements = new PasswordRequirements(
+                ReadNumber(), ReadNumber(), ReadNumber(), ReadNumber(), ReadBoolean(), ReadBoolean());
+            Console.WriteLine(CheckIfPasswordCorrect(password, passwordRequirements));
+        }
+
+        private static bool ReadBoolean()
+        {
+            return Convert.ToBoolean(Console.ReadLine());
+        }
+
+        private static int ReadNumber()
+        {
+            return Convert.ToInt32(Console.ReadLine());
+        }
+    }
+}
+############################################################
+
+
+
+
+using System;
+
+namespace RunningContest
+{
+    public struct Contestant
+    {
+        public string Name;
+        public string Country;
+        public double Time;
+
+        public Contestant(string name, string country, double time)
+        {
+            this.Name = name;
+            this.Country = country;
+            this.Time = time;
+        }
+    }
+
+    public struct ContestRanking
+    {
+        public Contestant[] Contestants;
+    }
+
+    public struct Contest
+    {
+        public ContestRanking[] Series;
+        public ContestRanking GeneralRanking;
+    }
+
+    public class Program
+    {
+        public static void Main()
+        {
+            Contest contest = ReadContestSeries();
+            GenerateGeneralRanking(ref contest);
+            Print(contest.GeneralRanking);
+            Console.Read();
+        }
+
+        public static void GenerateGeneralRanking(ref Contest contest)
+        {
+            // TO DO: remove the line below and implement this function
+            throw new NotImplementedException();
+        }
+
+        private static void Print(ContestRanking contestRanking)
+        {
+            for (int i = 0; i < contestRanking.Contestants.Length; i++)
+            {
+                Contestant contestant = contestRanking.Contestants[i];
+                const string line = "{0} - {1} - {2:F3}";
+                Console.WriteLine(string.Format(line, contestant.Name, contestant.Country, contestant.Time));
+            }
+        }
+
+        static void SortArray(ref Contest contest, int left, int right)
+        {
+            if (left < right)
+            {
+                return;
+            }
+
+            int middle = left + (right - left) / 2;
+            SortArray(ref contest, left, middle);
+            SortArray(ref contest, middle + 1, right);
+            MergeArray(ref contest, left, middle, right);
+        }
+
+        static void MergeArray(ref Contest contest, int left, int middle, int right)
+        {
+            int leftArrayLength = middle - left + 1;
+            int rightArrayLength = right - middle;
+            Contest[] leftTempArray = new Contest[leftArrayLength];
+            Contest[] rightTempArray = new Contest[rightArrayLength];
+            int i, j, seriesIndex;
+            for (seriesIndex = 0; seriesIndex < contest.Series.Length; seriesIndex++)
+            {
+                for (i = 0; i < leftArrayLength; ++i)
+                {
+                    leftTempArray[i] = contest[left + i];
+                }
+
+                for (j = 0; j < rightArrayLength; ++j)
+                {
+                    rightTempArray[j] = contest[middle + 1 + j];
+                }
+            }
+
+            i = 0;
+            j = 0;
+            int k = left;
+            while (i < leftArrayLength && j < rightArrayLength)
+            {
+                if (leftTempArray[i] <= rightTempArray[j])
+                {
+                    contest[k++] = leftTempArray[i++];
+                }
+                else
+                {
+                    contest[k++] = rightTempArray[j++];
+                }
+            }
+            while (i < leftArrayLength)
+            {
+                contest[k++] = leftTempArray[i++];
+            }
+            while (j < rightArrayLength)
+            {
+                contest[k++] = rightTempArray[j++];
+            }
+        }
+
+        static Contest ReadContestSeries()
+        {
+            Contest contest = new Contest();
+
+            int seriesNumber = Convert.ToInt32(Console.ReadLine());
+            int contestantsPerSeries = Convert.ToInt32(Console.ReadLine());
+
+            contest.Series = new ContestRanking[seriesNumber];
+
+            for (int i = 0; i < seriesNumber; i++)
+            {
+                contest.Series[i].Contestants = new Contestant[contestantsPerSeries];
+                for (int j = 0; j < contestantsPerSeries; j++)
+                {
+                    string contestantLine = "";
+
+                    while (contestantLine == "")
+                    {
+                        contestantLine = Console.ReadLine();
+                    }
+
+                    contest.Series[i].Contestants[j] = CreateContestant(contestantLine.Split('-'));
+                }
+            }
+
+            return contest;
+        }
+
+        private static Contestant CreateContestant(string[] contestantData)
+        {
+            const int nameIndex = 0;
+            const int countryIndex = 1;
+            const int timeIndex = 2;
+
+            return new Contestant(
+                contestantData[nameIndex].Trim(),
+                contestantData[countryIndex].Trim(),
+                Convert.ToDouble(contestantData[timeIndex]));
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+exemplu de mergesort
+
+using System;
+
+namespace RunningContest
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            var array = new int[] { 73, 57, 49, 99, 133, 20, 1 };
+            var expected = new int[] { 1, 20, 49, 57, 73, 99, 133 };
+            var sortedArray = SortArray(array, 0, array.Length - 1);
+        }
+
+        static int[] SortArray(int[] array, int left, int right)
+        {
+            if (left < right)
+            {
+                int middle = left + (right - left) / 2;
+                SortArray(array, left, middle);
+                SortArray(array, middle + 1, right);
+                MergeArray(array, left, middle, right);
+            }
+
+            return array;
+        }
+
+        static void MergeArray(int[] array, int left, int middle, int right)
+        {
+            var leftArrayLength = middle - left + 1;
+            var rightArrayLength = right - middle;
+            var leftTempArray = new int[leftArrayLength];
+            var rightTempArray = new int[rightArrayLength];
+            int i, j;
+            for (i = 0; i < leftArrayLength; ++i)
+            {
+                leftTempArray[i] = array[left + i];
+            }
+
+            for (j = 0; j < rightArrayLength; ++j)
+            {
+                rightTempArray[j] = array[middle + 1 + j];
+            }
+
+            i = 0;
+            j = 0;
+            int k = left;
+            while (i < leftArrayLength && j < rightArrayLength)
+            {
+                if (leftTempArray[i] <= rightTempArray[j])
+                {
+                    array[k++] = leftTempArray[i++];
+                }
+                else
+                {
+                    array[k++] = rightTempArray[j++];
+                }
+            }
+
+            while (i < leftArrayLength)
+            {
+                array[k++] = leftTempArray[i++];
+            }
+
+            while (j < rightArrayLength)
+            {
+                array[k++] = rightTempArray[j++];
+            }
+        }
+    }
+}
+
+
+
+
+[Fact]
+public void DoesNotHaveIllegalCharAfterExponentWithPositive()
+{
+    Assert.False(IsJsonNumber("12e+!3"));
+}
+
+
+using System;
+
+namespace Json
+{
+    public static class JsonNumber
+    {
+        public static bool IsJsonNumber(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+            {
+                return false;
+            }
+
+            return IsNumber(input);
+        }
+
+        private static bool IsNumber(string input)
+        {
+            int prevExponent = 0;
+            int prevFraction = 0;
+            for (int inputIndex = 0; inputIndex < input.Length; inputIndex++)
+            {
+                if (IsInteger(input, inputIndex))
+                {
+                    continue;
+                }
+
+                if (IsExponent(input, inputIndex, ref prevExponent))
+                {
+                    continue;
+                }
+
+                if (!IsFraction(input, inputIndex, ref prevFraction, prevExponent))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        private static bool IsInteger(string input, int inputIndex)
+        {
+            if (inputIndex == 0 && input[inputIndex] == '-')
+            {
+                return true;
+            }
+
+            if (input[0] == '0' && input.Length > 1 && input[1] != '.')
+            {
+                return false;
+            }
+
+            return input[inputIndex] >= '0' && input[inputIndex] <= '9';
+        }
+
+        private static bool IsExponent(string input, int inputIndex, ref int prevExponent)
+        {
+            if (char.ToLower(input[inputIndex]) == 'e' && prevExponent == 0 && inputIndex + 1 < input.Length)
+            {
+                prevExponent++;
+                return true;
+            }
+
+            return IsExponentSign(input, inputIndex, prevExponent);
+        }
+
+        private static bool IsExponentSign(string input, int inputIndex, int prevExponent)
+        {
+            return (input[inputIndex] == '-' ||
+                input[inputIndex] == '+')
+                && prevExponent == 1 &&
+                inputIndex + 1 < input.Length;
+        }
+
+        private static bool IsFraction(string input, int inputIndex, ref int prevFraction, int prevExponent)
+        {
+            if (prevFraction > 0 || input[inputIndex] == '.' && prevExponent > 0)
+            {
+                return false;
+            }
+
+            prevFraction += input[inputIndex] == '.' && inputIndex != input.Length - 1 ? 1 : 0;
+
+            return prevFraction == 1;
+        }
+    }
+}
+
+
+ public static bool IsInteger(string input)
+ {
+     const int TwoCharsLong = 2;
+     if (input.Length == TwoCharsLong)
+     {
+         if (input[0] == '-')
+         {
+             return IsDigit(input[1]);
+         }
+
+         return IsOneNine(input[0]) && AreDigits(input, TwoCharsLong, input.Length);
+     }
+
+     if (input.Length > TwoCharsLong)
+     {
+         if (IsOneNine(input[0]) && AreDigits(input, 1, input.Length))
+         {
+             return true;
+         }
+
+         return input[0] == '-' && IsOneNine(input[1]) && AreDigits(input, TwoCharsLong, input.Length);
+     }
+
+     return IsDigit(input[0]);
+ }
+ 
+ 
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+
+
+
+
+
+
+
+
