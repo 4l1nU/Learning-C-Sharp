@@ -1,0 +1,7 @@
+C:\Users\aungu\Documents\GitHub\FirstRepository\Exceptions\bin\Debug\Exceptions.exe.config
+C:\Users\aungu\Documents\GitHub\FirstRepository\Exceptions\bin\Debug\Exceptions.exe
+C:\Users\aungu\Documents\GitHub\FirstRepository\Exceptions\bin\Debug\Exceptions.pdb
+C:\Users\aungu\Documents\GitHub\FirstRepository\Exceptions\obj\Debug\Exceptions.csproj.AssemblyReference.cache
+C:\Users\aungu\Documents\GitHub\FirstRepository\Exceptions\obj\Debug\Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\aungu\Documents\GitHub\FirstRepository\Exceptions\obj\Debug\Exceptions.exe
+C:\Users\aungu\Documents\GitHub\FirstRepository\Exceptions\obj\Debug\Exceptions.pdb
