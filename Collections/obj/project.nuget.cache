@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "5b8b1k7wDiA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aungu\\Documents\\GitHub\\FirstRepository\\Collections\\Collections.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aungu\\.nuget\\packages\\microsoft.codeanalysis.netanalyzers\\8.0.0\\microsoft.codeanalysis.netanalyzers.8.0.0.nupkg.sha512",
+    "C:\\Users\\aungu\\.nuget\\packages\\roslynator.analyzers\\4.12.3\\roslynator.analyzers.4.12.3.nupkg.sha512",
+    "C:\\Users\\aungu\\.nuget\\packages\\sonaranalyzer.csharp\\9.25.0.90414\\sonaranalyzer.csharp.9.25.0.90414.nupkg.sha512",
+    "C:\\Users\\aungu\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+  ],
+  "logs": []
+}
